@@ -123,6 +123,7 @@ var resultado;
 
 primerDato = 12;
 segundoDato= 13;
-
+ 
+console.log ("el resultado es", resultado);
 
 
