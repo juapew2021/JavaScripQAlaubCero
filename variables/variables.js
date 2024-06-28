@@ -124,5 +124,9 @@ var resultado;
 primerDato = 12;
 segundoDato= 13;
 
+resultado = primerDato + segundoDato;
+
+console.log("El resultado es:", resultado);
+
 
 
