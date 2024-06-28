@@ -106,3 +106,23 @@ numero2 = 2; */
 //console.log(MiNombre);// Segunda validacion 
 /* console.log(miNombre);// Tercera validacion  */
 
+/* * Variables * 
+
+** Variables no inicializadas **
+
+Tres tipos de variables :
+var
+let
+const
+
+*/
+
+var primerDato;
+var segundoDato;
+var resultado;
+
+primerDato = 12;
+segundoDato= 13;
+
+
+
