@@ -128,5 +128,13 @@ resultado = primerDato + segundoDato;
 
 console.log("El resultado es:", resultado);
 
+resultado = primerDato - segundoDato; console.log("El resultado es:", resultado);
+resultado = primerDato * segundoDato; console.log("El resultado es:", resultado);
+resultado = primerDato / segundoDato; console.log("El resultado es:", resultado);
+
+
+
+
+
 
 
