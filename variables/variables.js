@@ -44,7 +44,7 @@ Camel case (estilizado como camelCase)estilo de escritura que se aplica a frases
 // Ejemplo node variables.js 
 /* VAMOS*/
 
-var a = 50;
+/* var a = 50;
 var b = 19;
 var c ; 
 var d = 60;
@@ -54,7 +54,7 @@ var resultadoSuma = a + b ;
 var resultadoResta = d - e ;
 
 console.log(resultadoSuma);
-console.log(resultadoResta);
+console.log(resultadoResta); */
 
 
 //console.log(a); // En este caso por consola nos sale un undefined 
@@ -63,45 +63,46 @@ console.log(resultadoResta);
 /* Pero si le asignamos el simbolo = a la letra a y le damos un 
 numero ya no nos saldra un undefined*/
 
-a = 5; 
+/* a = 5;  */
 //console.log(a); // En este caso su valor ya es 5 
 
 // Tambine podemos asignar una variable a otra variable 
-var a = 6;
-var b = a;
+/* var a = 6;
+var b = a; */
 //console.log(a); // Su valor es 6
 //console.log(b); // Su valor es 6
 
 // Otra forma es la siguiente 
-var a = 9;
-b = a;
+/* var a = 9; */
+/* b = a; */
 //console.log(a); // Su valor es 9
 //console.log(b); // Su valor es 9
 
 /* ***** Inicializar variables**** */
 
-var x = 9 ; // Inicializar la variable X con un numero
-var miIdioma = "Espanol"; // Inicializar la variable miIdioma con cadana de caracteres
+/* var x = 9 ; // Inicializar la variable X con un numero
+var miIdioma = "Espanol";  */// Inicializar la variable miIdioma con cadana de caracteres
 //console.log(x); 
 //console.log(miIdioma); 
 
 /* ***** Variables no Inicializadas **** */
 
-var numero1;
-var numero2;
+/* var numero1;
+var numero2; */
 //console.log(numero1); 
 //console.log(numero2); 
 
 // Pero si la iniciailzamos 
-numero1 = 1;
-numero2 = 2;
+/* numero1 = 1;
+numero2 = 2; */
 //console.log(numero1); 
 //console.log(numero2); 
 
 // Es muy importante tener cuidado con las Mayusculas y minusculas 
 
-var miNombre = "Juan Pablo Reyes";
+/* var miNombre = "Juan Pablo Reyes"; */
 
 //console.log(minombre);// Primer validacion 
 //console.log(MiNombre);// Segunda validacion 
-console.log(miNombre);// Tercera validacion 
+/* console.log(miNombre);// Tercera validacion  */
+
