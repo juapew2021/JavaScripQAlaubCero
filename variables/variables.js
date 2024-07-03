@@ -15,11 +15,6 @@ rl.question('Ingresa el primer número sr Mateo y Juan david: ', (input1) => {
     var multiplicacion = numero1 * numero2; console.log(multiplicacion);
     var division = numero1 / numero2; console.log(division);
 
-
-    
-    
-    
-
     rl.close();
   });
 });
