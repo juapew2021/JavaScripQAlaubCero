@@ -1,6 +1,6 @@
 const readline = require('readline');
 const rl = readline.createInterface({
-  input: process.stdin,
+  input: process.stdin ,
   output: process.stdout
 });
 
@@ -10,15 +10,15 @@ rl.question('Ingresa el primer número sr Mateo y Juan david: ', (input1) => {
   rl.question('Ingresa el segundo número sr Mateo y Juan david: ', (input2) => {
     const numero2 = parseFloat(input2);
 
-    var suma = numero1 + numero2;
-    var resta = numero1 - numero2;
-    var multiplicacion = numero1 * numero2;
-    var division = numero1 / numero2;
+    var suma = numero1 + numero2; console.log(suma);
+    var resta = numero1 - numero2; console.log(resta);
+    var multiplicacion = numero1 * numero2; console.log(multiplicacion);
+    var division = numero1 / numero2; console.log(division);
 
-    console.log(suma);
-    console.log(resta);
-    console.log(multiplicacion);
-    console.log(division);
+
+    
+    
+    
 
     rl.close();
   });
