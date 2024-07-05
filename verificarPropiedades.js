@@ -37,12 +37,22 @@ console.log("Cual es el tamaño de tu finca: ", miFinca.Tamaño); */
 
 
 var mainBody = {
-    "head": [["ojos" : "verdes"] ,  {"boca" : "grande"} ,  {"nariz" : "pequeña"}, {"orejas" : "largas"}] , 
-    "body" : [ "brazos" , "pecho" , "estomago" , "espalda"],
-    "footer" : [ "piernas", " rodillas" , "pies"]
+             "head": ["ojos",  
+                     "boca",  
+                     "nariz", 
+                     "orejas"] ,
+
+             "body" : [ "brazos" , 
+                      "pecho" ,
+                      "estomago" , 
+                      "espalda"],
+             "footer" : [ "piernas", 
+                        " rodillas" , 
+                        "pies"]
    }
 
-console.log ("Cuales son las partes de la cabeza", mainBody.head[0][1])
+console.log ("Cual es el color de ojos:", mainBody.head)
+/* concatenar variables */
 
 
 
