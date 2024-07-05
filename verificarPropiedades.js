@@ -33,4 +33,17 @@ var miFinca = {
 /* console.log("Que tiene mi Finca: ", miFinca) */
 /* console.log("Que frutales tiene tu finca: ", miFinca["Arboles frutales"]);
 console.log("Cual es el tamaño de tu finca: ", miFinca.Tamaño); */
-console.log("Cuantas personas viven en la finca: ", miFinca["personas viviendo"]);
+/*console.log("Cuantas personas viven en la finca: ", miFinca["personas viviendo"]); */
+
+
+var mainBody = {
+    {"head" : [{"ojos" : "verdes"} ,  {"boca" : "grande"} ,  {"nariz" : "pequeña"}, {"orejas" : "largas"}]} , 
+    {"body" : [ "brazos" , "pecho" , "estomago" , "espalda"]} ,
+    {"footer" : [ "piernas", " rodillas" , "pies"]}
+    
+   }
+
+console.log ("Cuales son las partes de la cabeza", mainBody.head)
+
+
+
