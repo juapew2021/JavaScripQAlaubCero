@@ -37,13 +37,12 @@ console.log("Cual es el tamaño de tu finca: ", miFinca.Tamaño); */
 
 
 var mainBody = {
-    {"head" : [{"ojos" : "verdes"} ,  {"boca" : "grande"} ,  {"nariz" : "pequeña"}, {"orejas" : "largas"}]} , 
-    {"body" : [ "brazos" , "pecho" , "estomago" , "espalda"]} ,
-    {"footer" : [ "piernas", " rodillas" , "pies"]}
-    
+    "head": [["ojos" : "verdes"] ,  {"boca" : "grande"} ,  {"nariz" : "pequeña"}, {"orejas" : "largas"}] , 
+    "body" : [ "brazos" , "pecho" , "estomago" , "espalda"],
+    "footer" : [ "piernas", " rodillas" , "pies"]
    }
 
-console.log ("Cuales son las partes de la cabeza", mainBody.head)
+console.log ("Cuales son las partes de la cabeza", mainBody.head[0][1])
 
 
 
