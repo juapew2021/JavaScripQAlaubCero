@@ -4,10 +4,10 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Ingresa el primer número sr Mateo y Juan david: ', (input1) => {
+rl.question('Ingresa el primer número sr: ', (input1) => {
   const numero1 = parseFloat(input1);
 
-  rl.question('Ingresa el segundo número sr Mateo y Juan david: ', (input2) => {
+  rl.question('Ingresa el segundo número sr : ', (input2) => {
     const numero2 = parseFloat(input2);
 
     var suma = numero1 + numero2; console.log(suma);
