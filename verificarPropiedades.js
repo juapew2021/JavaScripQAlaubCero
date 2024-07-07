@@ -37,7 +37,8 @@ console.log("Cual es el tamaño de tu finca: ", miFinca.Tamaño); */
 
 
 var mainBody = {
-             "head": ["ojos",  
+             "head": 
+                   [ "ojos" = "verdes" ,
                      "boca",  
                      "nariz", 
                      "orejas"] ,
@@ -52,6 +53,7 @@ var mainBody = {
    }
 
 console.log ("Cual es el color de ojos:", mainBody.head)
+console.log ("que color tienen tus ojos:")
 /* concatenar variables */
 
 
