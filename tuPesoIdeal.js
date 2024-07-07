@@ -29,10 +29,20 @@ console.log(resultado);*/
 
 
 let resultado;
-var temperaturaIdeal
-function medirTemperatura (temperaturaCorporal, sexo , edad, actividad, alimentacion) {
-    temperaturaIdeal = (temperaturaCorporal, sexo , edad, actividad, alimentacion)
+var temperaturaIdeal;
+function medirTemperatura(temperaturaCorporal, sexo , edad, alimentacion) {
+    temperaturaIdeal = ((temperaturaCorporal === 36°), sexo , edad, alimentacion);
 
-    if ()
-} 
-    
+    if (su temperaturaCorporal < 36°) {
+        resultado = "su cuerpo esta bajo la temperatura corporal regular";
+
+
+    } else if (su temperaturaCorporal> 36°) {
+
+        resultado = "su cuerpo esta por encima de la temperatura corporal habitual";
+
+    } else if (su temperaturaCorporal === 36°) {
+        resultado = "su temperatura corporal esta estable"
+        
+    }
+}
