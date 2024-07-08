@@ -76,6 +76,9 @@ console.log(resultado); */
 // tipos de datos 
 // int, string , numerico 
 
-var listaPartesCuerpo = [['Juan', 'ojos', 'negros'], ['pedro', 'ojos', 'azules'], ['mateo', 'ojos', 'verdes']]
+var estudiantes = [['Mateo'], ['David'], [ 'Juan']];
+var listaPartesCuerpo = [[ 'ojos', 'negros'], [, 'ojos', 'azules'], [ 'ojos', 'verdes']];
 
-console.log("El estudiante tienen un color de ojos:", listaPartesCuerpo[2][2]);
+console.log ("el estudiante" , estudiantes[0][0]);
+console.log (" tiene sus" , listaPartesCuerpo[2][0]);
+console.log (" de color ", listaPartesCuerpo[2][1]);
