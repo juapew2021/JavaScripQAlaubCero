@@ -53,6 +53,3 @@ var mainBody = {
 
 console.log ("Cual es el color de ojos:", mainBody.head)
 /* concatenar variables */
-
-
-

@@ -49,7 +49,7 @@ let resultado;
 function puedeConducir(esMayorDeEdad, estaBorracho, superoLimiteVelocidad, tieneLicencia) {
     
 
-    if (esMayorDeEdad === "sí" && estaBorracho === "no" && superoLimiteVelocidad === "no" && tieneLicencia === "sí") {
+    if (esMayorDeEdad === "si" && estaBorracho === "no" && superoLimiteVelocidad === "no" && tieneLicencia === "si") {
         resultado = "Puede conducir";
     } else {
         resultado = "No puede conducir";
@@ -63,4 +63,3 @@ let superoLimiteVelocidad = "no";
 let tieneLicencia = "si";
 
 console.log(puedeConducir(esMayorDeEdad, estaBorracho, superoLimiteVelocidad, tieneLicencia));
-
