@@ -1,12 +1,11 @@
 
-
 var miSustantivo = "Perro";
-var miAdjetivo = "negro";
-var miVerbo = "corrío";
-var miAdverbio = "rápidamente"; 
+var miAdjetivo = "Grande" ;
+var miVerbo = "Corrío" ;
+var miAdverbio = "rapidamente" ;
 
-/* El perro negro corrío rápidamente a la tienda. */
+/* El perro grande corrio rapidamente por el parque */
 
-var titulo = "El" + " perro" + " negro" + " corrío"
+var titulo = "El " + miSustantivo + " " + miAdjetivo + " " + miVerbo + " " + miAdverbio + " por el parque" ;
 
-console.log(titulo)
+console.log(titulo);
