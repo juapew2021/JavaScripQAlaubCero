@@ -1,10 +1,10 @@
 // Arreglos [Arrays]
 
-var myArreglo = ['Juan', 35];
+/* var myArreglo = ['Juan', 35];
 
-//console.log(myArreglo)
+console.log(myArreglo[1]); */
 
-// Arreglos añadidos
+/* // Arreglos añadidos
 
 var listaEstudiantes = [['juan', 78],['pedro', 76], ['maria', 45]];
 
@@ -41,7 +41,7 @@ Arreglo :         [[1, 2, 3], [2, 4, 6],['ee','rrr','tttt', 'ooo']]
 Indice:                0           1            2    
 Indices Internos :  0  1  2    0  1  2     0     1    2       3
 */
-let multiArreglos = [[1, 2, 3], [2, 4, 6],['ee','rrr','tttt', 'ooo']];
+/* let multiArreglos = [[1, 2, 3], [2, 4, 6],['ee','rrr','tttt', 'ooo']];
 
 console.log(multiArreglos[0]); // [ 1, 2, 3 ]   
 console.log(multiArreglos[1]); // [ 2, 4, 6 ]
@@ -50,56 +50,32 @@ console.log(multiArreglos[2]); // [ 'ee', 'rrr', 'tttt', 'ooo' ]
 // Sacamos los indices internos 
 
 console.log(multiArreglos[0][2]); //3
-console.log(multiArreglos[2][3]); // ooo
+console.log(multiArreglos[2][3]); // ooo */
+ 
 
 
 
 
-let curso;
+// arreglos 
 
-function determinarCurso(edad) {
+//var listaEstudiantes = [andres, juanDavid, Mateo, JuanP];
+/* let resultado;
+var listaEstudiantes;
 
-    if (edad === 5) {
-        curso = "Kinder";
-    } else if (edad === 6) {
-        curso = "Primero de primaria";
-    } else if (edad === 7) {
-        curso = "Segundo de primaria";
-    } else if (edad === 8) {
-        curso = "Tercero de primaria";
-    } else if (edad === 9) {
-        curso = "Cuarto de primaria";
-    } else if (edad === 10) {
-        curso = "Quinto de primaria";
-    } else if (edad === 11) {
-        curso = "Sexto de primaria";
-    } else if (edad === 12) {
-        curso = "Séptimo grado";
-    } else if (edad === 13) {
-        curso = "Octavo grado";
-    } else if (edad === 14) {
-        curso = "Noveno grado";
-    } else if (edad === 15) {
-        curso = "Décimo grado";
-    } else if (edad === 16) {
-        curso = "Undécimo grado";
-    } else if (edad === 17) {
-        curso = "Duodécimo grado";
-    } else {
-        curso = "Edad fuera de rango para cursos estándar";
-    }
-    return curso;
+function suGrado(edad) {
+    listaEstudiantes = [['juandavid', edad] , ['mateo', edad]];
+    if (edad >= 1 && edad <= 4 ) {
+        resultado = 'El estudiante esta el grado 8 ';
+    }else if (edad >= 4 && edad <= 10 ) {
+    resultado = 'El estudiante esta el grado 9 ';
+    
+     } 
 }
+suGrado(10);
+console.log(resultado); */
+// tipos de datos 
+// int, string , numerico 
 
-const estudiantes = [
-    { nombre: "juan", edad: 8 },
-    { nombre: "mateo", edad: 17 },
-    { nombre: "Luis", edad: 26 },
-    { nombre: "María", edad: 13 }
-];
+var listaPartesCuerpo = [['Juan', 'ojos', 'negros'], ['pedro', 'ojos', 'azules'], ['mateo', 'ojos', 'verdes']]
 
-for (let estudiante of estudiantes) {
-    let curso = determinarCurso(estudiante.edad);
-    console.log(`El estudiante ${estudiante.nombre}, de ${estudiante.edad} años, está en ${curso}.`);
-}
-
+console.log("El estudiante tienen un color de ojos:", listaPartesCuerpo[2][2]);
