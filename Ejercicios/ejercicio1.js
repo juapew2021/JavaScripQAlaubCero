@@ -32,8 +32,8 @@ function describePerson(name,age,interests) {
 
 let persona1 = describePerson("Juan", 41, ["billar", "bailar", "programar"]);
 let persona2 = describePerson("Juan David", 20, ["conducir", "futbol", "programar"]);
+let persona3 = describePerson("Mateo", 22, ["Hacer ejercicio", "Trabajador", "Programar"]);
 
 // Muestra los resultados en la consola
 
-console.log(persona1);
-console.log(persona2);
+console.log(persona3);
