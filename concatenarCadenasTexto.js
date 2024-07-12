@@ -26,14 +26,16 @@ var miAdjetivo = "alta";
 var miVerbo = "juega";
 var miAdverbio = "cuidadosamente"; 
 
-var titulo2 = "la " + miSustantivo + " " + miAdjetivo + " " + miVerbo + "con sus hijos " + miAdverbio
+var titulo2 = "la " + miSustantivo + " " + miAdjetivo + " " + miVerbo + " con sus hijos " + miAdverbio
 
 var miSustantivo = "leopardo";
 var miAdjetivo = "fuerte";
 var miVerbo = "corre";
 var miAdverbio = "cuidadosamente"; 
 
-var titulo3 = "El " + miSustantivo + " " + miAdjetivo + " " + miVerbo + "por la selva " + miAdverbio
+var titulo3 = "El " + miSustantivo + " " + miAdjetivo + " " + miVerbo + " por la selva " + miAdverbio
 
 
-console.log(titulo1:titulo2)
+console.log(titulo1)
+console.log(titulo2)
+console.log(titulo3)
