@@ -79,3 +79,11 @@ console.log(resultado); */
 var listaPartesCuerpo = [['Juan', 'ojos', 'negros'], ['pedro', 'ojos', 'azules'], ['mateo', 'ojos', 'verdes']]
 
 console.log("El estudiante tienen un color de ojos:", listaPartesCuerpo[2][2]);
+
+const data = [
+    [['id', 1], ['name','Netflix'], ['detail', 'Valor de subscripcion: $38.900']],
+    [['id', 2], ['name','Amazon Prime'], ['detail', 'Valor de subscripcion: $22.900']],
+    [['id', 3], ['name', 'Spotify'], ['detail','Valor de subscripcion: $16.900']]   
+];
+
+ console.log(data[0][2]);
