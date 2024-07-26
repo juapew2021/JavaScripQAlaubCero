@@ -28,6 +28,7 @@ var ordenesDePizza = [
 ];
 console.log("El cliente ha pedido una pizza: " + ordenesDePizza[1]["tipo de pizza"]); 
 console.log("Su precio es: " + ordenesDePizza[1]["precio"]); 
+console.log("Que topping desea llevar: " + ordenesDePizza[1]["toppings"][2]); 
 
 
 
