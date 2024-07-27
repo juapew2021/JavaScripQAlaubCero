@@ -1,0 +1,56 @@
+
+body {   
+    background-color: green; /* Color de fondo */
+    color: rgb(14, 12, 12); /* Color del texto */
+    padding: 20px;
+    text-align: center;
+    min-height: 100%;
+     }
+.snake-container {
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(22, 236, 68);
+           
+    img {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    position: relative;
+    right: 40%;
+    }
+}
+
+.apple-container {
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(22, 236, 68);
+           
+    img {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    position: relative;
+    left: 40%;
+    top: 60%;
+    }
+}
+/* forma y tamaño del titulo y subtitulo*/
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    
+}
+
+h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+}
+
+.logo img {
+    max-height: 100px; /* ajusta la altura según el logo */
+
+}
