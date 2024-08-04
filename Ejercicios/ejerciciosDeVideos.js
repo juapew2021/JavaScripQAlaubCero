@@ -1,8 +1,5 @@
 // Se haran algunos ejercicios de los videos mas representativos sobre los temas vistos
 
-const { Console } = require("console");
-const { find } = require("rxjs");
-
 // Video 27. concatenar cadenas de caratecteres
 
 var miProfesion = "Progamador de software" + " y " + "Cocinero en cocina fusion"
@@ -167,8 +164,16 @@ var diaFestivo;
 finDeSemana.shift();
 console.log(finDeSemana);
 
+// Video 45. .unshift()
 
+/* Con el metodo .unshift() podemos agregar un elemento al inicio de un arreglo */
 
+var finDeSemana = [ "viernes" , "sabado" , "domingo"];
+finDeSemana.unshift(" jueves ");
+console.log(finDeSemana);
 
+// Video 46. Lista de commpras
 
-
+var miListaDeCompras = [[5 , "pechugas"] , [3 , "platanos"] , [5 , "mazorcas"] , [6, "sandias"]];
+var compraDelDia = " el dia de hoy me apetece comprar " + miListaDeCompras[0][0] + " raciones de " + miListaDeCompras[0][1];
+console.log(compraDelDia);
