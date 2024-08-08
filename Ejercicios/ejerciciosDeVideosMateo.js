@@ -1,4 +1,4 @@
-// Se haran algunos ejercicios de los videos mas representativos sobre los temas vistos
+// Se haran algunos ejercicios de los videos mas representativos sobre los temas vistos.
 
 // Video 27. concatenar cadenas de caratecteres
 
@@ -24,15 +24,15 @@ console.log(subscripcion);
 /* Con la propiedad (.length) que nos permitira medir la cantidad de caracteres que tenemos dentro de una cadena.
 toma en cuenta los numeros, letras, signos, simbolos y espacios. ahora veremos un ejemplo */
  
-var abecedario;
+let abecedario;
 abecedario = "ABCD"
 console.log(abecedario.length);
 
 // Ahora agregamos un signo y espacio
 
-var abecedario;
-abecedario = " A, B, C, D, 21, *"
-console.log(abecedario.length);
+let abecedarios;
+abecedarios = " A, B, C, D, 21, *";
+console.log(abecedarios.length);
 
 // Video 31. Notacion de corchetes. 1. caracter
 
@@ -47,7 +47,7 @@ console.log(colorDeOjos[2]);
 
 // Video 32. Inmutabilidad de cadena de caracteres
 
- var cambioInmutable = "c puede cambiar 1 caracter individual d la cadena de karacteres asignada"
+ var cambioInmutable = "c puede cambiar 1 caracter individual d la cadena de karacteres asignada?";
  console.log(cambioInmutable);
  cambioInmutable[0] = "se"; // Error
  console.log(cambioInmutable);
@@ -68,7 +68,7 @@ console.log(colorDeOjos[colorDeOjos.length - 1]);
  console.log(colorDeOjos[colorDeOjos.length - 2]);
 
  /* De esta manera podemos tomar cualquier caracter de derecha a izquierda*/
- var n = 3
+ var n = 3;
  console.log(colorDeOjos[colorDeOjos.length - n]);
 
  // Video 36. Concatenar cadenas de texto
@@ -87,17 +87,17 @@ console.log(titulo);
 
 // Video 37. Arreglos (Arrays)
 
-var miArreglo =  [30 , "personas"];
-console.log(miArreglo);
+var miArreglo =  [30 , " personas"];
+console.log("Al concierto de Vicente Fernandez entraron : "  + miArreglo[0] +  miArreglo[1]);
 
 var especies = ["humanos" ,"animales" , "peces"];
 console.log(especies);
-var cualidadFisica = [ "Color de piel" , " Cuadrupedos" , " respirar bajo agua"]
+var cualidadFisica = [ "Color de piel" , " Cuadrupedos" , " respirar bajo agua"];
 console.log(cualidadFisica);
 
 // Video 38. Arreglos anidados
 
-var especies = [["humanos", "Color de piel"], ["animales" , "cuadrupedos"]];
+var especies = [["humanos", "Color de piel"] , ["animales" , "cuadrupedos"]];
 console.log(especies);
 
 var fechaDeNacimiento = [[26, "nov", 2001], [15, "abril", 1995]];
@@ -117,9 +117,9 @@ console.log(suma);
 // Video 40. Modificar elementos de un arreglo  
 
 var misNumeros = [12, 21, 8];
-misNumeros[0] = 6
+misNumeros[0] = 6;
 console.log(misNumeros);
-misNumeros[2] = " ocho "
+misNumeros[2] = " ocho ";
 console.log(misNumeros);
 misNumeros[1] = ["dame", 5];
 console.log(misNumeros);
@@ -129,8 +129,8 @@ console.log(misNumeros);
 var grupoDeLetras = [["A" , "B" , "C"] , ["D" , "E" , "F"], ["G", "H", "I"]];
 /*
   Arreglo :        [["A" , "B" , "C"] , ["D" , "E" , "F"], ["G", "H", "I"]];
-  Indice  :               0               1              2 
-  Indice interno :    0   1    2      0   1   2      0   1    2
+  Indice  :                 0                   1                 2 
+  Indice interno :    0     1     2      0      1     2      0    1    2
 
 */
 console.log(grupoDeLetras[1]);
@@ -177,3 +177,61 @@ console.log(finDeSemana);
 var miListaDeCompras = [[5 , "pechugas"] , [3 , "platanos"] , [5 , "mazorcas"] , [6, "sandias"]];
 var compraDelDia = " el dia de hoy me apetece comprar " + miListaDeCompras[0][0] + " raciones de " + miListaDeCompras[0][1];
 console.log(compraDelDia);
+
+// Video 47. Funciones
+
+/* Esta herammienta (Function) nos permite re usar informacion de nuestro codigo ya hecho apartir de
+la ejecucion de la funcion que hayamos creado. */
+
+function comoFunciona() {
+  console.log("¡De esta manera!");
+}
+
+comoFunciona();
+comoFunciona();
+
+/* vemos que podemos ejecutar o llamar repetidamente nuestra funcion. para que su lectura sea clara 
+necesitamos nuestros () igualmente como los metodos. */
+
+// Video 48. Argumentos
+
+/* Vamos a darle un valor de manera sencilla a nuestra funcion apartir de argumentos. 
+Estos argumentos son el valor de nuestro parametros de la funcion. */
+
+function multiplicar(a , b) {
+ 
+    var multiplicacion = a * b;
+    console.log(" El resultado de " + a + " * " + b +  " es " + multiplicacion);
+}
+multiplicar(21 , 12);
+multiplicar(2 , 9);
+
+/* Podemos cambiar el valor de nuestros parametros usando variables */
+ 
+var x = 21;
+var y = 12;
+multiplicar( x , y); 
+
+/* Podemos crear una funcion y concatenar varias cadenas de texto y mostrar una cadena final */
+
+function concatenarVariasCadenas(cadena1, cadena2, cadena3){
+   console.log(cadena1 + " " + cadena2 + " " + cadena3);
+   
+}
+concatenarVariasCadenas("La practica", "siempre construye", "al maestro");
+
+// Video 49. Ambito global
+
+/* Contamos con dos tipos de variables: Locales y Globales. 
+Globales: Se puede usar y modificar el cualquier lugar de nuestro programa principal. */
+
+var miVariableGlobal = 8;
+console.log(miVariableGlobal);
+
+// Si queremos comprobar si esta definida dentro  y fuera de la funcion 
+
+function miFuncion(params) {
+  console.log(miVariableGlobal) 
+}
+miFuncion();
+ console.log(miVariableGlobal);
