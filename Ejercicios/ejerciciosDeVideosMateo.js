@@ -220,7 +220,7 @@ function concatenarVariasCadenas(cadena1, cadena2, cadena3){
 }
 concatenarVariasCadenas("La practica", "siempre construye", "al maestro");
 
-// Video 49. Ambito global
+// Video 49. Ambito global.
 
 /* Contamos con dos tipos de variables: Locales y Globales. 
 Globales: Se puede usar y modificar el cualquier lugar de nuestro programa principal. */
@@ -230,8 +230,80 @@ console.log(miVariableGlobal);
 
 // Si queremos comprobar si esta definida dentro  y fuera de la funcion 
 
-function miFuncion(params) {
+function miFuncion() {
   console.log(miVariableGlobal) 
 }
 miFuncion();
  console.log(miVariableGlobal);
+
+ //Video 50. Ambito local.
+
+ /* Las variables locales son las se definen y solo se pueden usar dentro de una funcion exacta. */
+
+function miNumero(params) {
+  var miVariableLocal = 21;
+  console.log(miVariableLocal);
+}
+/* miNumero();
+console.log(miVariableLocal); */
+
+
+// Video 51: Variables globales y locales.
+
+/* Veremos a continuacion como funcionan estas variables en conjunto dentro de un codigo. */
+
+var myNameIs = "Mateo";
+
+function showMyName(params) {
+    var myNameIs = "Abril";
+    console.log(myNameIs);
+}
+showMyName();
+console.log(myNameIs);
+
+// Video 52. Retornar un valor.
+
+/* Las funciones tambien pueden retornar y tomar un valor debido a sus propiedades especiales que
+permite a la funcio ninteractuar con el codigo del programa princial. */
+
+function resta(h, z) {
+  return  h - z;
+}
+(resta(21, 8));
+console.log(resta(21, 8));
+
+// Video 54: Asignar un valor retornado.
+
+ function sumar(a, b) {
+    return a + b;
+ }
+// Ejemplo 1
+sumar(12, 8);
+var resultado = sumar(12, 8);
+console.log(resultado);
+
+// Ejemplo 2
+ 
+function laMetaDeNuestraCadena(metaConLaProgramacion) {
+   return " Deseo ser un gran programador de " + metaConLaProgramacion;
+}
+laMetaDeNuestraCadena("Videojuegos y musica");
+  var laMeta = laMetaDeNuestraCadena("Videojuegos y musica");
+  console.log(laMeta);
+
+// Video 55. Permanece en fila.
+
+/*  */
+
+function proximoEnLaFila(arreglo, elemento) {
+   arreglo.push(elemento);
+   return arreglo.shift();
+}
+
+var miArreglo = [1, 2, 3, 4, 5];
+console.log("Antes: " + JSON.stringify(miArreglo));
+
+console.log(proximoEnLaFila(miArreglo, 6));
+
+console.log("Despues: " + JSON.stringify(miArreglo));
+
