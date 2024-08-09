@@ -174,7 +174,7 @@ console.log(finDeSemana);
 
 // Video 46. Lista de commpras
 
-var miListaDeCompras = [[5 , "pechugas"] , [3 , "platanos"] , [5 , "mazorcas"] , [6, "sandias"]];
+var miListaDeCompras = [[5, "pechugas"] , [3 , "platanos"] , [5 , "mazorcas"] , [6, "sandias"]];
 var compraDelDia = " el dia de hoy me apetece comprar " + miListaDeCompras[0][0] + " raciones de " + miListaDeCompras[0][1];
 console.log(compraDelDia);
 
@@ -223,7 +223,7 @@ concatenarVariasCadenas("La practica", "siempre construye", "al maestro");
 // Video 49. Ambito global.
 
 /* Contamos con dos tipos de variables: Locales y Globales. 
-Globales: Se puede usar y modificar el cualquier lugar de nuestro programa principal. */
+Globales: Se puede usar y modificar en cualquier lugar de nuestro programa principal. */
 
 var miVariableGlobal = 8;
 console.log(miVariableGlobal);
@@ -231,7 +231,7 @@ console.log(miVariableGlobal);
 // Si queremos comprobar si esta definida dentro  y fuera de la funcion 
 
 function miFuncion() {
-  console.log(miVariableGlobal) 
+  console.log(miVariableGlobal);
 }
 miFuncion();
  console.log(miVariableGlobal);
@@ -264,7 +264,7 @@ console.log(myNameIs);
 // Video 52. Retornar un valor.
 
 /* Las funciones tambien pueden retornar y tomar un valor debido a sus propiedades especiales que
-permite a la funcio ninteractuar con el codigo del programa princial. */
+permite a la funcion interactuar con el codigo del programa principal. */
 
 function resta(h, z) {
   return  h - z;
@@ -301,9 +301,50 @@ function proximoEnLaFila(arreglo, elemento) {
 }
 
 var miArreglo = [1, 2, 3, 4, 5];
+
 console.log("Antes: " + JSON.stringify(miArreglo));
 
 console.log(proximoEnLaFila(miArreglo, 6));
 
-console.log("Despues: " + JSON.stringify(miArreglo));
+console.log("Despues: " + JSON.stringify(miArreglo)); 
 
+
+// Video 56. Valores boleanos.
+
+/* Estos valores boleanos se refieren a verdadero o falso. Tienen una manera exacta de uso
+para poder leerse de manera correcta en el programa. Los encontramos cono " true y false ". */
+
+console.log(true);
+console.log(false);
+
+/* Los boleanos seran utiles cuando trabajemos condicionales, comparacion de valores y operadores logicos. */ 
+
+// Video 57. Operador de igualdad.
+
+/* Nos permitira comparar los valores para saber si son iguales o no lo son y si representan un mismo valor. */
+
+console.log(21 == 21); // true
+console.log(21 == 12); // false
+
+console.log("Comparacion" =="Comparacion"); // true
+console.log("Hola" == " hello"); // false
+
+console.log([2, 4, 6] == [8,10, 12]); //false
+
+// (==) es una expresion de comparacion
+
+//Video 58. Operador de asginacion estricta.
+
+/* Este operador nos permite comparar valores con igualdad estricta y la diferencia del uso del operador de igualdad. */
+
+console.log(8 == 8); // true
+console.log(8 == "8"); // true
+
+/* Aqui vemos que aunque usemos elementos diferentes, se convierten en un tipo de dato comun
+ya que usamos el operador de igualdad. */
+
+console.log(8 === 8); // true
+console.log(8 === "8"); // false
+
+/* (===) representa la comparacion de valores con igualdad estricta, es decir, 
+no permite que los elementos diferentes se unan como un dato comun. */
