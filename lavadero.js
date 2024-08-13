@@ -1,24 +1,28 @@
-const readlineSync = require('readline-sync');
-
+const readline = require('readline'); 
+const rl = readline.createInterface({ 
+  input: process.stdin , 
+  output: process.stdout 
+}); 
+ 
+rl.question('¿Qué tipo de lavado desea? (0 para Carro, 1 para Moto): ', (input1) => { 
+    const numero1 = parseFloat(input1); 
+  
+    rl.question('¿Qué servicio extra necesita? (0 para Lavado de motor con vapor, 1 para Encerado, 2 para Aspirado interior): ', (input2) => { 
+      const numero2 = parseFloat(input2);
+  
 var serviciosDeLavado = [
     {
         "tipoVehiculo": "Carro",
         "lavadoGeneral": 50000, // Precio en COP
         "moneda": "COP",
         "extras": [
-            {
-                "servicio": "Lavado de motor con vapor",
-                "precio": 15000 // Precio en COP
-            },
-            {
-                "servicio": "Encerado",
-                "precio": 20000 // Precio en COP
-            },
-            {
-                "servicio": "Aspirado interior",
-                "precio": 10000 // Precio en COP
-            }
-        ]
+            
+            "Lavado de motor con vapor",
+
+            "Encerado",
+
+            "Aspirado interior"
+        ],
     },
     
     {
@@ -26,55 +30,26 @@ var serviciosDeLavado = [
         "lavadoGeneral": 30000, // Precio en COP
         "moneda": "COP",
         "extras": [
-            {
-                "servicio": "Lavado de motor con vapor",
-                "precio": 8000 // Precio en COP
-            },
-            {
-                "servicio": "Encerado",
-                "precio": 12000 // Precio en COP
-            },
-            {
-                "servicio": "Aspirado interior",
-                "precio": 5000 // Precio en COP
-            }
+            
+                "Lavado de motor con vapor",
+
+                "Encerado",
+
+                "Aspirado interior"
         ]
     }
 ];
 
-function mostrarMenu() {
-    console.log("Seleccione el tipo de vehículo para el lavado:");
-    console.log("1. Carro");
-    console.log("2. Moto");
-    let opcionVehiculo = parseInt(readlineSync.question("Ingrese la opción (1 o 2): "));
+const tipoVehiculo = serviciosDeLavado[numero1].tipoVehiculo;
+    const precioLavado = serviciosDeLavado[numero1].lavadoGeneral;
+    const extra = serviciosDeLavado[numero1].extras[numero2];
+    const precioTotal = precioLavado + extra.precio;
 
-    if (opcionVehiculo === 1 || opcionVehiculo === 2) {
-        let tipoVehiculo = serviciosDeLavado[opcionVehiculo - 1];
-        console.log("El lavado general para " + tipoVehiculo.tipoVehiculo + " cuesta " + tipoVehiculo.lavadoGeneral + " " + tipoVehiculo.moneda);
+    console.log(`Has elegido: ${tipoVehiculo} con ${extra.nombre}`);
+    console.log(`Precio del lavado general: ${precioLavado} ${serviciosDeLavado[numero1].moneda}`);
+    console.log(`Precio del servicio extra: ${extra.precio} ${serviciosDeLavado[numero1].moneda}`);
+    console.log(`Precio total: ${precioTotal} ${serviciosDeLavado[numero1].moneda}`);
+rl.close();
+  });
+});
 
-        console.log("¿Desea agregar algún extra?");
-        for (let i = 0; i < tipoVehiculo.extras.length; i++) {
-            console.log((i + 1) + ". " + tipoVehiculo.extras[i].servicio + " - " + tipoVehiculo.extras[i].precio + " " + tipoVehiculo.moneda);
-        }
-        console.log((tipoVehiculo.extras.length + 1) + ". No agregar extras");
-
-        let opcionExtra = parseInt(readlineSync.question("Ingrese la opción: "));
-
-        if (opcionExtra > 0 && opcionExtra <= tipoVehiculo.extras.length) {
-            let extraSeleccionado = tipoVehiculo.extras[opcionExtra - 1];
-            console.log("Has seleccionado " + extraSeleccionado.servicio + " con un precio de " + extraSeleccionado.precio + " " + tipoVehiculo.moneda);
-            let precioTotal = tipoVehiculo.lavadoGeneral + extraSeleccionado.precio;
-            console.log("El precio total es: " + precioTotal + " " + tipoVehiculo.moneda);
-        } else if (opcionExtra === tipoVehiculo.extras.length + 1) {
-            console.log("No se agregaron extras. El precio total es: " + tipoVehiculo.lavadoGeneral + " " + tipoVehiculo.moneda);
-        } else {
-            console.log("Opción no válida. Por favor, intente nuevamente.");
-            mostrarMenu();
-        }
-    } else {
-        console.log("Opción no válida. Por favor, intente nuevamente.");
-        mostrarMenu();
-    }
-}
-
-mostrarMenu();

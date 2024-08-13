@@ -1,3 +1,15 @@
+const readline = require('readline'); 
+const rl = readline.createInterface({ 
+  input: process.stdin , 
+  output: process.stdout 
+}); 
+ 
+rl.question('Que opcion de menu desea el comensal? ', (input1) => { 
+  const numero1 = parseFloat(input1); 
+ 
+  rl.question('Con que lo desea acompañar? : ', (input2) => { 
+    const numero2 = parseFloat(input2);
+
 /*var ordenesDePizza = [
     {
 
