@@ -30,10 +30,26 @@ function describePerson(name,age,interests) {
 // Llamadas a la función con diferentes valores
 /* Quinto paso: Finalmente, se llama a la función con diferentes conjuntos de valores y se muestran los resultados en la consola. */
 
-let persona1 = describePerson("Juan", 41, ["billar", "bailar", "programar"]);
+ /*let persona1 = describePerson("Juan", 41, ["billar", "bailar", "programar"]);
 let persona2 = describePerson("Juan David", 20, ["conducir", "futbol", "programar"]);
 let persona3 = describePerson("Mateo", 22, ["Hacer ejercicio", "Trabajador", "Programar"]);
 
 // Muestra los resultados en la consola
 
-console.log(persona3);
+console.log(persona3); */
+
+
+function describePerson(name, age, hobbies) {
+
+  let hobbies=  hobbies.join(',');
+  
+  let description = `Hola, mi nombre es ${name}, tengo ${age} y mis hobbies son: ${hobbies}.`;
+
+  return description ;
+
+  
+
+  
+   
+  
+}
