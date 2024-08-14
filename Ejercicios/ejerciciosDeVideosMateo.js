@@ -312,16 +312,16 @@ console.log("Despues: " + JSON.stringify(miArreglo));
 // Video 56. Valores boleanos.
 
 /* Estos valores boleanos se refieren a verdadero o falso. Tienen una manera exacta de uso
-para poder leerse de manera correcta en el programa. Los encontramos cono " true y false ". */
+para poder leerse de manera correcta en el programa. Los encontramos cono " true y false ". 
 
 console.log(true);
 console.log(false);
 
-/* Los boleanos seran utiles cuando trabajemos condicionales, comparacion de valores y operadores logicos. */ 
+Los boleanos seran utiles cuando trabajemos condicionales, comparacion de valores y operadores logicos. */ 
 
 // Video 57. Operador de igualdad.
 
-/* Nos permitira comparar los valores para saber si son iguales o no lo son y si representan un mismo valor. */
+/* Nos permitira comparar los valores para saber si son iguales o no lo son y si representan un mismo valor. 
 
 console.log(21 == 21); // true
 console.log(21 == 12); // false
@@ -335,16 +335,50 @@ console.log([2, 4, 6] == [8,10, 12]); //false
 
 //Video 58. Operador de asginacion estricta.
 
-/* Este operador nos permite comparar valores con igualdad estricta y la diferencia del uso del operador de igualdad. */
+Este operador nos permite comparar valores con igualdad estricta y la diferencia del uso del operador de igualdad. 
 
 console.log(8 == 8); // true
 console.log(8 == "8"); // true
 
-/* Aqui vemos que aunque usemos elementos diferentes, se convierten en un tipo de dato comun
-ya que usamos el operador de igualdad. */
+ Aqui vemos que aunque usemos elementos diferentes, se convierten en un tipo de dato comun
+ya que usamos el operador de igualdad. 
 
 console.log(8 === 8); // true
 console.log(8 === "8"); // false
 
-/* (===) representa la comparacion de valores con igualdad estricta, es decir, 
+(===) representa la comparacion de valores con igualdad estricta, es decir, 
 no permite que los elementos diferentes se unan como un dato comun. */
+
+// Video 59. Practica para comparar valores.
+
+// Veremos como podemos usar el operador de igualdad y el operador de igualdad estricta
+
+var c = 5;
+var d = 5;
+
+console.log(c == d); // true
+console.log(c === d); // true
+
+c = 10;
+ 
+console.log(c == d); // false
+console.log(c === d); // false
+
+c = "10";
+
+console.log(c == d); // true
+console.log(c === d); // false
+
+c = "JavaScript";
+d= "JavaScript";
+
+console.log(c == d); // true
+console.log(c === d); // true
+
+
+// Video 60. Operador de desigualdad.
+
+/* Este operador compara dos valores y retorna "true" si tienen un valor distinto. 
+si su valor es igual el resulttado sera "false". */
+
+console.log( 12 != 21); // true
