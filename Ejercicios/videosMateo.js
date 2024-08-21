@@ -585,3 +585,312 @@ if ( 2  == 2) {
 (else) funciona como un respaldo ante la clausula principal que es (if).
 El codigo que se llevara a cabo la ejecucion dependera de cual sea la condicion.*/
 
+// Video 71. Clausula "else if".
+
+// Con esto se pueden verificar y manejar condiciones alternativas
+
+/*
+function clasificarValor(valor) {
+  if (valor % 2 == 0){
+    console.log("divisible entre 2");
+  } else if (valor % 3 == 0){
+   console.log("divisible entre 3");
+  } else { 
+    console.log("no es divisible entre las opciones")
+  }
+
+}
+clasificarValor(2);
+*/
+
+// Video 72. Condicionales, orden logico.
+
+/*
+function clasificarValor(valor) {
+if (valor < 5){
+  console.log("menor que 5");
+} else if (valor < 10){
+  console.log("menor que 10");
+} else {
+  console.log("mayor o igual que 10");
+}  
+}
+clasificarValor(12);
+*/
+
+// Video 73. Encadenar sentencias "else if".
+
+// Se identificaran varias sentencias de la mano de los condicionales
+
+/*
+function interpretarIMC(indicideDeMasaCorporal) {
+  if ( indicideDeMasaCorporal < 5){   
+      console.log("bajo peso");
+  } else if(indicideDeMasaCorporal = 24.9);{
+      console.log("normal")
+  } if(indicideDeMasaCorporal<= 29.9){
+      console.log("sobrepeso");
+  } else {
+      console.log("obeso");
+  }
+}
+*/
+
+ // Video 74. Codigo golf.
+
+ /*
+ function puuntajeDeGolf(par, golpes) {
+    if (golpes = 1){
+        return "Hole-in-one!";
+  } else if (golpes <= par -2 ){
+    return "Eagle";
+  } else if (golpes == par - 1){
+    return "Birdie";
+  } else if (valor == par){
+    return "Par";
+  } else if (golpes == par +1){
+    return " Bogey";
+  } else if(golpes == par + 2){
+    return "Double bogey";
+  } else if (valor >= par + 3){
+    return "Go home";
+  }
+
+ }
+ console.log(puuntajeDeGolf());
+*/
+
+ // Video 75. Sentencia Switch
+
+ /*
+  function clasificarValor(valor){
+    var respuesta;
+    switch (valor){
+    case 1:
+        respuesta = "Alpha"
+        break;
+    case 2: 
+        respuesta = "Omega"
+        break;
+    case 3:
+        respuesta = "Gamma"
+        break;
+    case 4:
+        respuesta = "Delta"
+        break;
+    }
+    return respuesta;
+  }
+
+  console.log(clasificarValor(4));
+*/
+
+ // Video 76. Sentencia Switch. orden logico
+
+ // Nos permite agregarle una opcion predeterminada a dicha sentencia. 
+
+ /*
+ switch (mes) {
+  case 1:
+      console.log("enero");
+      break;
+  case 2: 
+      console.log( "febrero"); 
+      break;
+  case 3: 
+      console.log( "marzo");
+      break;
+  case 4:
+      console.log("abril");
+      break;
+  case 5: 
+      console.log( "mayo"); 
+      break;
+  case 6: 
+      console.log( "junio");
+      break;
+
+  default: 
+  console.log( "ingrese un mes valido");
+} 
+*/
+
+ // Video 77. Sentencia switch. Multiples casos.
+
+ /*
+ function clasificarVolumen(valor){
+     var valor;
+     switch (valor){
+      case 1: 
+        volumen = "Bajo"
+        break;
+        case 2:
+        case 3:
+        volumen = "Intermedio";
+        break;
+        case 4:
+        case 5:
+        case 6:
+        volumen = "Alto";
+        break;
+
+     }
+     return volumen;
+ }
+
+ console.log(clasificarVolumen(6));
+*/
+
+ // Video 78. Reemplazar else if por switch.
+
+ /*
+ function seleccionarIdioma(valor) {
+   var idioma;
+   switch(valor){
+      case 1:
+        idioma = "Español";  
+        break;
+      case 2:
+        idioma == "Frances";
+        break;
+    case 3:
+      idioma = "Italiano";
+      break;
+    
+    default:
+      idioma = "Ingles";
+      break;  
+ }
+return idioma;
+}
+*/
+
+ // Video 79. Retornar valores boleanos
+ // Retornar valores boleanos de manerza conciza (true or false).
+
+/*
+ function esMenorQue(a, b) {
+      if(a < b);
+      return true;
+ } else {
+   return false;
+ }
+
+
+function esMenorQue(a, b) { 
+    return a < b;
+  
+}
+console.log(esMenorQue(3, 10));
+*/
+
+ // Video 80. Patron de retorno anticipado.
+
+ /* Cuando retornamos el valor de una funcion en su momento se define completamente, cualquier linea despues de
+ (return) no se ejecuta y la funcion se detendra inmeditamente*/
+
+ /*
+ function miFuncion() {
+    console.log("Hola");
+    return "Mundo";
+    console.log("Adios");
+ }
+miFuncion();
+*/
+
+ // Video 81. Conteo de cartas.
+ 
+ /*
+ var conteo = 0;
+
+ function contarCartas(carta) {
+    var decision;
+}
+
+switch (carta) {
+    case 2:
+    case 3:    
+    case 4:
+    case 5:
+    case 6:
+    conteo++;
+    break;
+case 10:
+case "J":
+case "Q":
+case "K":
+case "A":
+    conteo--;
+    break;
+}
+
+if (conteo > 0) {
+   decision = "Apostar";
+ } else {
+   decision = "Esperar";
+
+  return + " " + decision;
+ }
+ 
+console.log(contarCartas(2));
+console.log(contarCartas(3));
+console.log(contarCartas(7));
+console.log(contarCartas(K));
+console.log(contarCartas(A));
+*/
+
+ //Video 82. Crear objetos.
+
+// Un Objeto esta compuesto de propiedades que son su valor.
+
+/*
+ var miPerro = {
+    "Nombre": "Yan",
+    "Edad": 5,
+    "Peso": 6,
+    "Raza": "Lobo"
+ };
+*/
+
+//Video 86. Actualizar propiedades.
+
+var mochila = {
+    "color": "Azul",
+    "tamaño": "Mediano",
+    "contenido": ["botella de agua", "cuaderno"]
+};
+/*
+console.log(mochila.color); // Azul
+mochila.color = "Verde";
+console.log(mochila.color); // Verde
+
+
+console.log(mochila.contenido);
+mochila.contenidopush("Lapiz");
+console.log(mochila.contenido);
+*/
+
+ // Video 87. Agregar propiedades
+
+/*
+ var curso = {
+    "titulo": "Aprender JavaScript desde 0",
+    "idioma": "Español",
+    "duracion": 30
+ }
+ curso.visitas = 34500;
+ console.log(curso.visitas);
+*/
+
+ // Video 88. ELiminar propiedades.
+
+ /*
+ var curso = {
+  "titulo": "Aprender JavaScript desde 0",
+  "idioma": "Español",
+  "duracion": 30
+ };
+ delete curso.idioma;
+ console.log(curso.idioma);
+ console.log(curso);
+*/
