@@ -510,6 +510,7 @@ si su valor es igual el resulttado sera "false". */
 
 /*
 and = [
+  &&  false && true = false
   &&  true && true = true
   &&  true && false = false
   &&  false && false = false
@@ -847,26 +848,29 @@ console.log(contarCartas(A));
  var miPerro = {
     "Nombre": "Yan",
     "Edad": 5,
-    "Peso": 6,
+    "Peso": "6 kg",
     "Raza": "Lobo"
  };
 */
 
 //Video 86. Actualizar propiedades.
 
+/*
 var mochila = {
     "color": "Azul",
     "tamaño": "Mediano",
     "contenido": ["botella de agua", "cuaderno"]
 };
-/*
+
+
+
 console.log(mochila.color); // Azul
 mochila.color = "Verde";
 console.log(mochila.color); // Verde
-
+console.log(mochila);
 
 console.log(mochila.contenido);
-mochila.contenidopush("Lapiz");
+mochila.contenido.push("Lapiz");
 console.log(mochila.contenido);
 */
 
@@ -876,21 +880,25 @@ console.log(mochila.contenido);
  var curso = {
     "titulo": "Aprender JavaScript desde 0",
     "idioma": "Español",
-    "duracion": 30
+    "duracion": ["segundos"]
  }
+
+ curso.horaDeInicio = "16:00h";
  curso.visitas = 34500;
  console.log(curso.visitas);
+ console.log(curso);
+ curso.duracion.unshift("minutos");
+ console.log(curso);
 */
 
  // Video 88. ELiminar propiedades.
 
- /*
+/*
  var curso = {
   "titulo": "Aprender JavaScript desde 0",
   "idioma": "Español",
   "duracion": 30
  };
- delete curso.idioma;
- console.log(curso.idioma);
+ delete curso.titulo;
  console.log(curso);
 */
