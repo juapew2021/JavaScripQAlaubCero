@@ -482,3 +482,199 @@ console.log("Zapato" < "Yate"); // false
 //console.log(200 < 200); //false
 //console.log(200 <= 200); // true
 
+
+// Video 66. Operador logico AND (&&).
+
+/*
+and = [
+  &&  false && true = false
+  &&  true && true = true
+  &&  true && false = false
+  &&  false && false = false
+];
+
+*/
+
+//var num = 21;
+
+//console.log((num > 20) && (num > 19)); // true
+//console.log((num > 10) && (num > 22 )); // false
+//console.log((num < 10) && (num > 22 )); // false
+
+// Ejemplo #1.
+
+/*
+var f = 2;
+
+console.log((f > 10) && (f > 3)); // false
+console.log((f < 10) && (f < 3)); // true
+console.log((f > 10) && (f < 3)); // false
+*/
+
+// Video 67. Operador logico OR (||).
+
+/*
+or = [
+  false || true = true
+  true  || false = true
+  true  || true = true
+  false || false = false
+];
+*/
+
+//var x = 8;
+
+//console.log((x > 9) || (x > 7)); // true
+//console.log((x >= 5) || (x < 7)); // true
+//console.log((x == 8) || (x > 2)); // true
+//console.log((x <= 7) || (x == 5)); // false
+
+// Ejemplo #1.
+
+/*
+var f = 50;
+
+console.log(f > 49) || (f >= 40); // true
+console.log(f >= 49) || (f > 40); // true
+console.log(f < 49) || (f < 40); // false
+*/
+
+// Video 68. Operaador logico NOT (!)
+
+/*
+not = [
+   !false = true
+   !true = false
+];  
+*/
+ 
+// (!m > 8) -- true --- false
+
+//var m = 10;
+
+//console.log(!(m > 8)); // false
+//console.log(!(m < 8)); // true
+
+// Ejemplo #1.
+/*
+var f = 21;
+
+console.log(!(f > 22)); // true
+console.log(!(f < 22)); // false
+*/
+
+// Video 69. Sentencias condicionales.
+
+/* Nos permiten deicidir si un codigo se ejecuta depende de una condicion.
+Esto nos da mas control de que es lo que se va a reproducir en el programa.*/
+
+/*
+var z = 2;
+if ( 2 == 2) {
+  console.log('2 es igual que 2');
+};
+*/
+
+// Ejemplo #1.
+/*
+var h = 20;
+
+if (20 ==  20); {
+
+    console.log('20 es ogual que 20');
+}
+*/
+
+// Video 70. Clausula "else".
+
+/*
+var z = 2;
+if ( 2  == 2) {
+  console.log('2 es igual que 2')
+} else { 
+   console.log(' 2 no es igual que 2'); 
+}
+*/
+
+/* Una clausula es una parte de una estructura que se puede usar en el codigo. 
+(else) funciona como un respaldo ante la clausula principal que es (if).
+El codigo que se llevara a cabo la ejecucion dependera de cual sea la condicion.*/
+
+// Ejemplo #1.
+
+/*
+var h = 20;
+
+
+if (20 == 21) {
+ console.log('20 es ogual que 20');
+} else {
+    console.log('20 no es igual que 21');
+}
+*/
+
+
+// Video 71. Clausula "else if".
+
+// Con esto se pueden verificar y manejar condiciones alternativas
+
+/*
+function clasificarValor(valor) {
+  if (valor % 2 == 0){
+    console.log("divisible entre 2");
+  } else if (valor % 3 == 0){
+   console.log("divisible entre 3");
+  } else { 
+    console.log("no es divisible entre las opciones")
+  }
+
+}
+clasificarValor(2);
+*/
+
+// Ejemplo #1.
+
+/*
+function clasificarValor(valor) {
+    if (valor % 8 == 0 ){
+        console.log('se puede dividir entre 8');
+    } else if (valor % 6 == 0) {
+        console.log('se puede dividir entre 6');
+    } else {
+        console.log('no es dividible entre las opciones');
+    }
+}
+clasificarValor(36);
+*/
+
+// Video 72. Condicionales, orden logico.
+
+/*
+function clasificarValor(valor) {
+if (valor < 5){
+  console.log("menor que 5");
+} else if (valor < 10){
+  console.log("menor que 10");
+} else {
+  console.log("mayor o igual que 10");
+}  
+}
+clasificarValor(12);
+*/
+
+
+// Ejemplo #1.
+
+/*
+function clasificarValor(valor) {
+    if (valor < 8){
+        console.log('menor que 8');
+    } else if (valor < 6){
+        console.log('menor que 6');
+    } else {
+        console.log('mayor o igual que 8');
+    }
+}
+clasificarValor(12);
+*/
+
