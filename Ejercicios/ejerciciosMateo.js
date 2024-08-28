@@ -251,4 +251,234 @@ function asignarValorRetornado(valoresRetornados) {
 asignarValorRetornado(' con una variable');
 var valorAsignado = asignarValorRetornado(' con una variable');
 console.log(valorAsignado);
-*/    
+*/ 
+
+// Video 55. Permanece en fila.
+
+/* 
+function proximoEnLaFila(arreglo, elemento) {
+   arreglo.push(elemento);
+   return arreglo.shift();
+}
+
+var miArreglo = [1, 2, 3, 4, 5];
+
+console.log("Antes: " + JSON.stringify(miArreglo));
+
+console.log(proximoEnLaFila(miArreglo, 6));
+
+console.log("Despues: " + JSON.stringify(miArreglo)); 
+*/
+
+// Ejemplo #1.
+
+/*
+function siguienteEnLaLista(arreglo, elemento) {
+    arreglo.push(elemento);
+    return arreglo.shift();
+}
+
+var miArreglo = ["Juan", "David" , "Mateo", "Carlos"];
+
+console.log("Antes" + JSON.stringify(miArreglo));
+
+console.log(siguienteEnLaLista(miArreglo, "Lucas"));
+
+console.log("Despues" + JSON.stringify(miArreglo));
+*/
+
+//Video 58. Operador de asginacion estricta.
+
+//Este operador nos permite comparar valores con igualdad estricta y la diferencia del uso del operador de igualdad. 
+
+//console.log(8 == 8); // true
+//console.log(8 == "8"); // true
+
+ /*Aqui vemos que aunque usemos elementos diferentes, se convierten en un tipo de dato comun
+ya que usamos el operador de igualdad.*/
+
+//console.log(8 === 8); // true
+//console.log(8 === "8"); // false
+
+/*(===) representa la comparacion de valores con igualdad estricta, es decir, 
+no permite que los elementos diferentes se unan como un dato comun.*/
+
+// Ejemplos #1.
+
+//console.log( 12 == 12); // true
+//console.log(12 == "12"); // true
+
+
+//console.log(12 === 12); // true
+//console.log(12 === "12"); // false
+
+
+// Video 59. Practica para comparar valores.
+
+// Veremos como podemos usar el operador de igualdad y el operador de igualdad estricta
+
+//var c = 5;
+//var d = 5;
+
+//console.log(c == d); // true
+//console.log(c === d); // true
+
+//c = 10;
+ 
+//console.log(c == d); // false
+//console.log(c === d); // false
+
+//c = "5";
+
+//console.log(c == d); // true
+//console.log(c === d); // false
+
+//c = "JavaScript";
+//d= "JavaScript";
+
+//console.log(c == d); // true
+//console.log(c === d); // true
+
+//Ejemplo #1.
+
+/*
+var a = 21;
+var b = 21;
+
+console.log(a == b); // true
+console.log(a === b); // true
+
+b = 2;
+
+console.log(a == b); // false
+console.log(a === b); // false
+
+b = "21";
+
+console.log(a == b);// true
+console.log(a === b);// false
+
+a = "DeveloperFront";
+b = "DeveloperFront";
+*/
+
+
+// Video 60. Operador de desigualdad.
+
+/* Este operador compara dos valores y retorna "true" si tienen un valor distinto. 
+si su valor es igual el resulttado sera "false". */
+
+//console.log( 12 != 21); // true
+//console.log( 12 != 12); // false
+
+//console.log( "JavaScript" != "JavaScript"); // false
+//console.log( "hola" != "JavaScript"); // true
+
+//console.log([1, 2, 3] != [1, 2, 3]);
+
+// Ejemplo #1.
+
+/*
+console.log(50 != 5); // true
+console.log(50 != 50); // false
+
+console.log("Develop" != "Develop"); // false
+console.log("Developer" != "Develop"); // true
+
+console.log([6, 7, 8] != [6, 7, 8]); // true
+*/
+
+// Video 61. Operador de desigualdad esctricta.
+
+// Este compara la desigualdad de manera esstricta  
+ 
+//console.log(2 != "2"); // false
+//console.log(2 !== "2"); // true
+
+/* (!==) Cuando no representan el mismo tipo de dato pero si el mismo valor, los convierte en un dato en comun.
+(!=) El operador detecta que el dato tiene el mismo valor, pero si no son el mismo tipo de dato, dara falso. */
+
+
+// Ejemplo #1.
+
+/*
+console.log(100 != "100"); // false
+console.log(100 !== "100"); // true
+*/
+
+// Videos (62, 63, 64, 65). Operadores "mayor que" (>) "menor que" (<) "mayor o igual que" (>=) "menor o igual que" (<=)
+//Ejericios mayor que (>)
+
+//console.log(6 > 5); // true
+//console.log(5 > 6); // false
+
+//console.log("B" > "A"); // true
+//console.log("ACB" > "ABC"); // true
+
+//console.log("AB" > "A"); // true 
+
+//console.log("mundo" > "hola"); // true 
+
+//var a = 12;
+//var b = 21;
+
+//console.log(a > b); // false
+//console.log (b > a); // true
+
+// Ejemplo #1.
+
+/*
+console.log(21 > 12); // true
+console.log(12 > 21); // false
+
+console.log("A"> "AB"); // false
+console.log("LNM" > "LMN"); // true
+console.log("Zapato" > "Yate"); // true
+*/
+
+// Ejemplos mayor o igual que (>=)
+
+//console.log(5 > 5); // false
+//console.log(5 >= 5); // true
+
+// Ejemplo #1.
+
+//console.log(21 > 21); // false
+//console.log(21 >= 21)// true
+
+
+// Ejemplos menor que (<)
+
+//console.log(8 < 9); // true
+//console.log(12 < 10); // false
+
+//console.log("A" < "B"); // false
+//console.log("ABC" < "ACB"); // false
+
+//var a = 21;
+//var b = 12;
+
+//console.log(a < b); // false
+//console.log(b < a); // true
+
+// Ejemplo #1.
+
+/*
+console.log(21 < 12); // false
+console.log(12 < 21); // true
+
+console.log("A" < "AB"); // true
+console.log("LNM" < "LMN"); // false
+console.log("Zapato" < "Yate"); // false
+*/
+
+// Ejemplos menor o igual que (<=)
+
+//console.log(8 < 8); //false
+//console.log(8  <= 8); // true
+
+// Ejemplo #1.
+
+//console.log(200 < 200); //false
+//console.log(200 <= 200); // true
+
