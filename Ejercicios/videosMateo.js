@@ -853,6 +853,8 @@ console.log(contarCartas(A));
  };
 */
 
+
+// Video 83. Acceder a las propiedades
 //Video 86. Actualizar propiedades.
 
 /*

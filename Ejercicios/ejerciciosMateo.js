@@ -678,3 +678,746 @@ function clasificarValor(valor) {
 clasificarValor(12);
 */
 
+// Video 73. Encadenar sentencias "else if".
+
+// Se identificaran varias sentencias de la mano de los condicionales
+
+/*
+function interpretarIMC(indicideDeMasaCorporal) {
+  if ( indicideDeMasaCorporal < 5){   
+      console.log("bajo peso");
+  } else if(indicideDeMasaCorporal = 24.9);{
+      console.log("normal")
+  } if(indicideDeMasaCorporal<= 29.9){
+      console.log("sobrepeso");
+  } else {
+      console.log("obeso");
+  }
+}
+*/
+
+// Ejemplo #1.
+
+/*
+function identificarEdad(edad) {
+  if (edad < 18){
+    console.log("menoria de edad");
+  } else if (edad >= 18){
+    console.log("mayoria de edad");
+  } if (edad > 60){
+    console.log("es usted de la tercera edad");
+  } else {
+    console.log("es mayor de edad")
+  }
+}
+identificarEdad(20);
+*/
+
+// Video 74. Codigo golf.
+
+ /*
+ function puuntajeDeGolf(par, golpes) {
+    if (golpes = 1){
+        return "Hole-in-one!";
+  } else if (golpes <= par -2 ){
+    return "Eagle";
+  } else if (golpes == par - 1){
+    return "Birdie";
+  } else if (valor == par){
+    return "Par";
+  } else if (golpes == par +1){
+    return " Bogey";
+  } else if(golpes == par + 2){
+    return "Double bogey";
+  } else if (valor >= par + 3){
+    return "Go home";
+  }
+
+ }
+ console.log(puuntajeDeGolf());
+*/
+
+// Video 75. Sentencia Switch
+
+ /*
+  function clasificarValor(valor){
+    var respuesta;
+    switch (valor){
+    case 1:
+        respuesta = "Alpha"
+        break;
+    case 2: 
+        respuesta = "Omega"
+        break;
+    case 3:
+        respuesta = "Gamma"
+        break;
+    case 4:
+        respuesta = "Delta"
+        break;
+    }
+    return respuesta;
+  }
+
+  console.log(clasificarValor(4));
+*/
+
+/*
+  function clasificarEstacion(estacion) {
+    var respuesta;
+    switch(estacion){
+
+      case 1:
+        respuesta = "primavera";
+        break;
+      case 2: 
+        respuesta = "verano";
+        break;
+      case 3:
+        respuesta = "otoño";
+        break;
+      case 4:
+        respuesta = "invierno";  
+    }
+      return respuesta;
+  }
+console.log(clasificarEstacion(3));
+*/
+
+
+ // Video 76. Sentencia Switch. orden logico
+
+ // Nos permite agregarle una opcion predeterminada a dicha sentencia. 
+
+ /*
+ switch (mes) {
+  case 1:
+      console.log("enero");
+      break;
+  case 2: 
+      console.log( "febrero"); 
+      break;
+  case 3: 
+      console.log( "marzo");
+      break;
+  case 4:
+      console.log("abril");
+      break;
+  case 5: 
+      console.log( "mayo"); 
+      break;
+  case 6: 
+      console.log( "junio");
+      break;
+
+  default: 
+  console.log( "ingrese un mes valido");
+} 
+*/
+
+// Ejemplo #1.
+
+/*
+var materia = 4;
+switch (materia) {
+  case 1:
+      console.log("matematicas");
+      break;
+  case 2: 
+      console.log( "lengua"); 
+      break;
+  case 3: 
+      console.log( "fisica");
+      break;
+  case 4:
+      console.log("quimica");
+      break;
+  case 5: 
+      console.log( "artes"); 
+      break;
+  case 6: 
+      console.log( "danza");
+      break;
+
+  default: 
+  console.log( "ingrese una materia valida");
+} 
+*/
+
+
+ // Video 77. Sentencia switch. Multiples casos.
+
+ /*
+ function clasificarVolumen(valor){
+     var valor;
+     switch (valor){
+      case 1: 
+        volumen = "Bajo"
+        break;
+        case 2:
+        case 3:
+        volumen = "Intermedio";
+        break;
+        case 4:
+        case 5:
+        case 6:
+        volumen = "Alto";
+        break;
+
+     }
+     return volumen;
+ }
+
+ console.log(clasificarVolumen(6));
+*/
+
+// Ejemplo #1.
+
+/*
+function clasificarDificultad(valor) {
+  var valor;
+  switch(valor){
+    case 1: 
+        dificultad = "Baja"
+        break;
+        case 2:
+        case 3:
+        dificultad = "Intermedia";
+        break;
+        case 4:
+        case 5:
+        case 6:
+        dificultad = "Alta";
+        break;
+        case 7:
+        case 8:
+        case 9:
+       dificultad = "Experta";
+       break;
+  }
+   return dificultad;
+}console.log(clasificarDificultad(7));
+*/
+
+ /*
+ function seleccionarIdioma(valor) {
+   var idioma;
+   switch(valor){
+      case 1:
+        idioma = "Español";  
+        break;
+      case 2:
+        idioma == "Frances";
+        break;
+    case 3:
+      idioma = "Italiano";
+      break;
+    
+    default:
+      idioma = "Ingles";
+      break;  
+ }
+return idioma;
+}
+*/
+
+// Ejemplo #1.
+
+/*
+function seleccionarPais(valor) {
+  var pais;
+  if (valor == 1){
+    pais = "Colombia";
+  } else if (valor == 2){
+    pais = "Japon";
+  } else if (valor == 3){
+    pais = "Egypto";
+  } else {
+    pais = "Italia";
+  }
+  return pais;
+}
+console.log(seleccionarPais(1));
+
+
+function seleccionarPais(valor) {
+  var pais;
+  switch (valor) {
+    case 1:
+      pais = "Colombia";
+      break;
+    case 2: 
+      pais = "Japon";
+      break;
+    case 3:
+      pais = "Egypto";
+      break;
+    default:
+      pais = "Italia";
+      break;
+  }
+  return pais;
+}
+*/
+
+// Video 79. Retornar valores boleanos
+ // Retornar valores boleanos de manerza conciza (true or false).
+
+/*
+ function esMenorQue(a, b) {
+      if(a < b);
+      return true;
+ } else {
+   return false;
+ }
+
+
+function esMenorQue(a, b) { 
+    return a < b;
+  
+}
+console.log(esMenorQue(3, 10));
+*/
+
+// Ejemplo #1.
+
+/*
+function esMayorQue(y, z) {
+  if ( z < y){
+    return true;
+  } else {
+    return false;
+  }  
+}
+console.log(esMayorQue(21, 12));
+*/
+
+// Video 80. Patron de retorno anticipado.
+
+ /* Cuando retornamos el valor de una funcion en su momento se define completamente, cualquier linea despues de
+ (return) no se ejecuta y la funcion se detendra inmeditamente*/
+
+ /*
+ function miFuncion() {
+    console.log("Hola");
+    return "Mundo";
+    console.log("Adios");
+ }
+miFuncion();
+*/
+
+// Ejemplo #1.
+
+/*
+function myFunction() {
+  console.log("Hello");
+  return "world";
+  console.log("Godbye");
+}
+
+myFunction();
+*/
+
+// Video 81. Conteo de cartas.
+ 
+ /*
+ var conteo = 0;
+
+ function contarCartas(carta) {
+    var decision;
+}
+
+switch (carta) {
+    case 2:
+    case 3:    
+    case 4:
+    case 5:
+    case 6:
+    conteo++;
+    break;
+case 10:
+case "J":
+case "Q":
+case "K":
+case "A":
+    conteo--;
+    break;
+}
+
+if (conteo > 0) {
+   decision = "Apostar";
+ } else {
+   decision = "Esperar";
+
+  return + " " + decision;
+ }
+ 
+console.log(contarCartas(2));
+console.log(contarCartas(3));
+console.log(contarCartas(7));
+console.log(contarCartas(K));
+console.log(contarCartas(A));
+*/
+
+// Ejemplo #1.
+
+/*
+var estrellas;
+
+function equiposDeFutbol(equipo) {
+  var elMejor;
+
+  switch(equipo) {
+    case "Manchester United":
+    case "Atletico de Madrid":
+    case "Inter de Milan": 
+    case "Borussia Dortmund":
+    case "Sporting de Lisboa":
+      equipo++;
+      break;
+    case "Real Madrid":
+    case "Manchester City":
+    case "Paris Saint Germain":
+    case "Bayern Munich":
+    case "Juventus":
+      equipo--;
+      break;
+  }
+  
+}
+*/
+
+
+ //Video 82. Crear objetos.
+
+// Un Objeto esta compuesto de propiedades que son su valor.
+
+/*
+ var miPerro = {
+    "Nombre": "Yan",
+    "Edad": 5,
+    "Peso": "6 kg",
+    "Raza": "Lobo"
+ };
+ */
+
+ // Ejemplo 1.
+
+ /*
+ var cuerpoHumano = {
+  "cabeza": "ojos",
+  "tronco": "pectorales",
+  "piernas": "Tobillos"
+ };
+
+ console.log(cuerpoHumano);
+*/
+
+// Video 83. Acceder a  propiedades.
+
+// Ejemplo #1.
+
+/*
+var cuerpoHumano = {
+  "cabeza": "ojos",
+  "tronco": "pectorales",
+  "piernas": "Tobillos"
+ };
+
+ console.log(cuerpoHumano.cabeza);
+*/
+
+// Video 84. Acceder a propiedades, notacion de corchetes.
+
+// Ejemplo #1.
+
+/*
+var cuerpoHumano = {
+  "cabeza": "labios",
+  "tronco": "claviula",
+  "piernas": "rodillas"
+ };
+console.log(cuerpoHumano["cabeza"]);
+*/
+
+// Video 85. Acceder a propiedades variables.
+/*
+var finalistas = {
+  1: "Real Madrid",
+  2: "Manchester City",
+  3: "PSG"
+ };
+ var posicion = 2;
+
+ console.log(finalistas[posicion]);
+ */
+
+//Video 86. Actualizar propiedades.
+
+/*
+var mochila = {
+    "color": "Azul",
+    "tamaño": "Mediano",
+    "contenido": ["botella de agua", "cuaderno"]
+};
+
+console.log(mochila.color); // Azul
+mochila.color = "Verde";
+console.log(mochila.color); // Verde
+console.log(mochila);
+
+console.log(mochila.contenido);
+mochila.contenido.push("Lapiz");
+console.log(mochila.contenido);
+*/
+
+// Ejemplo #1.
+
+/*
+var cuerpoHumano = {
+  "cabeza": "ojos",
+  "tronco": "pectorales", 
+  "piernas": "Tobillos"
+};
+
+cuerpoHumano.tronco = "pecho";
+console.log(cuerpoHumano.tronco);
+cuerpoHumano.tronco ="abdomen";
+*/
+
+// Video 87. Agregar propiedades
+
+/*
+ var curso = {
+    "titulo": "Aprender JavaScript desde 0",
+    "idioma": "Español",
+    "duracion": ["segundos"]
+ }
+
+ curso.horaDeInicio = "16:00h";
+ curso.visitas = 34500;
+ console.log(curso.visitas);
+ console.log(curso);
+ curso.duracion.unshift("minutos");
+ console.log(curso);
+*/
+
+// Ejemplo #1.
+
+/*
+var cuerpoHumano = {
+  "cabeza": "ojos",
+  "tronco": ["pectorales"], 
+  "piernas": "Tobillos"
+};
+
+cuerpoHumano.tronco.push("abdomen");
+console.log(cuerpoHumano.tronco);
+cuerpoHumano.pies = "dedos";
+console.log(cuerpoHumano.pies);
+console.log(cuerpoHumano);
+*/
+
+// Video 88. ELiminar propiedades.
+
+/*
+ var curso = {
+  "titulo": "Aprender JavaScript desde 0",
+  "idioma": "Español",
+  "duracion": 30
+ };
+ delete curso.titulo;
+ console.log(curso);
+*/
+
+// Ejemplo #1.
+
+/*
+var cuerpoHumano = {
+  "cabeza": "ojos",
+  "tronco": ["pectorales"], 
+  "piernas": "Tobillos"
+};
+ delete cuerpoHumano.piernas;
+ console.log(cuerpoHumano);
+*/
+
+// Video 89. Objetos para busquedas.
+
+// Se usara un objeto para reemplazar una sentencia (switch).
+/*
+switch (palabraCompleta) {
+  case "A":
+    palabraCompleta = "Amor";
+    break;
+  case "B":
+    palabraCompleta = "Bendicion";
+  case "C":
+    palabraCompleta = "Carisma";
+  case "D":
+    palabraCompleta = "Dios"
+
+  default:
+    break;
+}
+function buscarLaPalabra(letra) {
+var palabraCompleta;
+
+palabraCompleta = {
+  "A": "Amor",
+  "B": "Bendicion",
+  "C": "Carisma", 
+  "D": "Dios"
+  }
+
+  return palabraCompleta[letra];
+}
+
+console.log(buscarLaPalabra("A"));
+console.log(buscarLaPalabra("B"));
+*/
+
+// Video 90. Verificar propiedades.
+
+/*
+var miCuaderno = {
+  "color": "verde",
+  "categoria": 3,
+  "precio": 4.56
+};
+console.log(miCuaderno.hasOwnProperty("color"));
+
+
+function verificarPropiedad(objeto, propiedad) {
+  if (objeto.hasOwnProperty(propiedad)){
+    return "propiedad : " + objeto[propiedad];
+ } else {
+    return "el objeto no tiene propiedad."
+ }
+  
+}
+
+var miCuaderno = {
+  "color": "verde",
+  "categoria": 3,
+  "precio": 4.56
+};
+console.log(verificarPropiedad(miCuaderno, "precio"));
+console.log(verificarPropiedad(miCuaderno, "lista"));
+*/ 
+
+// Ejemplo #1.
+
+
+var Movil ={
+  "version": 17.5,
+  "modelo": "Iphone 13 pro max",
+  "color": "verde",
+  "peso": 400
+}
+
+console.log(Movil.hasOwnProperty("modelo"));
+
+function verificarPropiedad(objeto, propiedad) {
+  if (objeto.hasOwnProperty(propiedad)){
+    return "propiedad : " + objeto[propiedad];
+ } else {
+    return "el objeto no tiene propiedad."
+ }
+  
+}
+
+var Movil ={
+  "version": 17.5,
+  "modelo": "Iphone 13 pro max",
+  "color": "verde",
+  "peso": 400
+}
+
+console.log(verificarPropiedad(Movil, "version"));
+
+// Video 91. Objetos complejos.
+
+// Tienen combinaciones con datos disntintos y sus respectivos valores.
+
+/*
+var ordenesDePizza = [
+  {
+    "tipo": "margarita",
+    "tamaño": "individual",
+    "precio": 5.67,
+    "toppings": [
+      "extra queso",
+      "champiñones",
+      "piña"
+    ],
+    "para llevar": true
+  },
+
+  {
+    "tipo": "4 quesos",
+    "tamaño": "familiar",
+    "precio": 18.54,
+    "toppings": [
+      "extra queso",
+      "pimenton"
+    ],
+    "para llevar": false
+  }
+
+];
+console.log(ordenesDePizza[0]);
+console.log(ordenesDePizza[1]);
+*/
+
+// Ejemplo #1.
+
+/*
+var  opcionDeMenu = [
+  {
+
+      "Entrante" : "Setas a la plancha con refrito andaluz",
+      "Plato principal" :"Entrecod gallego 350gr",
+      "Postre": "Tarta de queso fluida",
+      "Topings": [
+          "pan",
+          "bebida",
+          "bolleria"
+       ],
+
+       "llevar" : true
+
+      },
+  
+  {
+      "Entrante" : "Parrillada de verduras campestre",
+      "Plato principal" :"Pulpo a la brasa",
+      "Postre": "Culan de Santiago",
+      "Topings": [
+          "pan",
+          "bebida",
+          "bolleria"
+       ],
+
+       "llevar" : true
+
+  },
+
+  {
+      "Entrante" : "Patacon hogao pinton",
+      "Plato principal" :"Ajiaco de la montaña",
+      "Postre": "Salpicon de frutas",
+      "Topings": [
+          "pan",
+          "bebida",
+          "bolleria"
+       ],
+
+       "llevar" : true
+
+  }
+];
+
+console.log(opcionDeMenu[0]);
+*/
+
