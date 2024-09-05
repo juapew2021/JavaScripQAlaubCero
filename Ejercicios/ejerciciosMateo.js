@@ -1124,7 +1124,7 @@ var cuerpoHumano = {
   "piernas": "Tobillos"
  };
 
- console.log(cuerpoHumano.cabeza);
+ console.log(cuerpoHumano.piernas);
 */
 
 // Video 84. Acceder a propiedades, notacion de corchetes.
@@ -1141,16 +1141,17 @@ console.log(cuerpoHumano["cabeza"]);
 */
 
 // Video 85. Acceder a propiedades variables.
+
 /*
 var finalistas = {
-  1: "Real Madrid",
-  2: "Manchester City",
-  3: "PSG"
+  "Uno": "Real Madrid",
+  "Dos": "Manchester City",
+  "Tres": "PSG"
  };
- var posicion = 2;
+ var posiciones = "Dos";
 
- console.log(finalistas[posicion]);
- */
+ console.log(finalistas[posiciones]);
+*/
 
 //Video 86. Actualizar propiedades.
 
@@ -1252,29 +1253,45 @@ switch (palabraCompleta) {
     break;
   case "B":
     palabraCompleta = "Bendicion";
+    break;
   case "C":
     palabraCompleta = "Carisma";
+    break;
   case "D":
     palabraCompleta = "Dios"
+    break;
 
-  default:
+  default: palabraCompleta;
     break;
 }
+*/
+/*
 function buscarLaPalabra(letra) {
 var palabraCompleta;
 
-palabraCompleta = {
+ var palabraCompleta = {
   "A": "Amor",
   "B": "Bendicion",
   "C": "Carisma", 
   "D": "Dios"
   }
 
+if (letra === "A") {
   return palabraCompleta[letra];
+} else if (letra === "B"){
+  return palabraCompleta[letra];
+} else if (letra === "C"){
+  return palabraCompleta[letra];
+} else if (letra === "D"){
+  return palabraCompleta[letra];
+} else {
+return "tu valor no coincide";
 }
 
+}
+
+console.log(buscarLaPalabra("P"));
 console.log(buscarLaPalabra("A"));
-console.log(buscarLaPalabra("B"));
 */
 
 // Video 90. Verificar propiedades.
@@ -1304,11 +1321,11 @@ var miCuaderno = {
 };
 console.log(verificarPropiedad(miCuaderno, "precio"));
 console.log(verificarPropiedad(miCuaderno, "lista"));
-*/ 
+*/
 
 // Ejemplo #1.
 
-
+/*
 var Movil ={
   "version": 17.5,
   "modelo": "Iphone 13 pro max",
@@ -1333,8 +1350,9 @@ var Movil ={
   "color": "verde",
   "peso": 400
 }
-
+*
 console.log(verificarPropiedad(Movil, "version"));
+*/
 
 // Video 91. Objetos complejos.
 
@@ -1421,3 +1439,454 @@ var  opcionDeMenu = [
 console.log(opcionDeMenu[0]);
 */
 
+// Video 92. Objetos anidados.
+
+/*
+var miReceta = {
+  "descripcion": "mi postre favorito",
+  "costo": 15.6,
+  "ingredientes": {
+    "masa": {
+      "harina": "100 gr",
+      "sal": "1 cucharada",
+      "agua": "1 taza"
+    },
+    "cobertura": {
+      "azucar": "120 gr",
+      "chocolate": "4 cucharadas",
+      "mantequilla": "200 gr"
+    }
+  }
+};
+console.log(miReceta.ingredientes.masa.harina);
+*/
+
+/*
+var miCancion = {
+  "nombre": "origen",
+  "tipo": "rap",
+  "artista": "Hope MG",
+  "composicion": {
+    "letra": {
+      "parrafos": 6,
+      "velocidad": "4/4",
+      "coro": "sin coro"
+    },
+    "estilo": {
+      "base": "boom bap",
+      "tema": "superacion" 
+    }
+  }
+};
+console.log(miCancion.artista);
+console.log(miCancion.composicion.estilo["tema"]);
+*/
+
+// Video 93. Arrlegos anidados.
+
+// Estos arreglos se encuentran dentro de estructuraas mas complejas.
+
+/*
+var misPlantas = [
+  {
+    tipo: "flores",
+    lista: [
+      "rosas",
+      "tulipanes",
+      "dientes de leon"
+    ]
+  },
+
+  {  
+    tipo: "arboles",
+    lista: [
+      "abeto",
+      "pino",
+      "abedul"
+    ]
+  }
+];
+
+var miPrimeraflor = misPlantas[0].lista[0];
+console.log(miPrimeraflor);
+*/
+
+// Ejemplo #1.
+
+/*
+var misFrutas = [
+  {
+    tipo: "frutas de arboles",
+    lista: [
+      "manzanas",
+      "mangos",
+      "mamoncillo",
+      "limon"
+    ]
+  },
+  {
+    tipo: "frutas de tierra",
+    lista: [
+      "sandia",
+      "papaya",
+      "fresa",
+      "piña",
+      "durazno"
+    ]
+  }
+];
+
+var primeraFruta = misFrutas[0].lista[1];
+console.log(primeraFruta);
+*/
+
+// Video 94. Coleccion de discos.
+
+/*
+var coleccionDeDiscos = {
+  7853:{
+    tituloDelAlbum: "Bee gees greatest",
+    artista: "Bee gees",
+    canciones: ["Staiyn Alive"]
+  },
+  5439:{
+    tituloDelAlbum: "ABBA gold"
+  }
+};
+
+function actualizarDiscos(discos, id, propiedad, valor) {
+  if (valor === ""){
+      delete discos[id][propiedad];
+  } else if (propiedad === "canciones"){
+    discos[id][propiedad] = discos[id][propiedad] || [];
+    discos[id][propiedad].push(valor);
+  } else {
+    discos[id][propiedad] = valor;
+  }
+  
+} 
+console.log(coleccionDeDiscos[5439].artista);
+
+actualizarDiscos(coleccionDeDiscos, 5439, "artista", "ABBA");
+
+console.log(coleccionDeDiscos[5439].artista);
+*/
+
+// Video 95. Ciclos  o bucles (while).
+
+// Nos permiten repetir una secuencia de instrucciones un numero especifico de veces.
+
+/* Ciclo (while). se usan cuando no se tiene un numero especifco de iteraciones. 
+es una repetecion del bloque de codigo que deseamos repetir. */
+
+/*
+var i = 0;
+
+while (i <= 3) {
+  console.log("hola mundo");
+  i++;
+}
+*/
+
+// Ejemplo #1.
+
+/*
+var f = 0;
+
+while (f <= 10) {
+  console.log("Aprendiendo a hacer ciclos y bucles");
+  f++;
+}
+*/
+
+// Video 96. Ciclos (for).
+
+// Lo usamos cuanso sabemos cuantas iteraciones seran necesarias. esta actualiza automaticamente la variable creada.
+
+/*
+var miArreglo = [];
+
+for (var i = 0; i < 10; i++) {
+    miArreglo.push(i);
+}
+console.log(miArreglo);
+*/
+
+// Ejemplo #1.
+
+
+/*
+var miArreglo = [];
+
+for (var num = 0; num < 20; num+= 4) {
+    miArreglo.push(num);
+}
+console.log(miArreglo);
+*/
+
+// Video 97. Ciclos For numeros impares.
+
+/*
+var miArreglo = []; 
+  for (var i = 1; i < 20; i += 2){
+    miArreglo.push(i);
+  }
+  console.log(miArreglo);
+*/ 
+
+/*
+var numerosImpares = []; 
+  for (var i = 3; i < 50; i += 3){
+    numerosImpares.push(i);
+  }
+  console.log(numerosImpares);
+*/
+
+// Video 98. Ciclos (for) contar hacia atras.
+/*
+for (var i = 15; i >= 10; i--){
+  console.log(i);
+}
+*/
+
+// Ejemplo #1.
+
+
+/*
+for(var i = 150; i >= 100; i--){
+  console.log(i);
+}
+*/
+
+// Video 99. Iteras sobre un arreglo con un ciclo (for).
+
+// Iteras sobre un arreglo significa tener cada elemento de un arreglo y poderlo usar e el cuerpo de ciclo.
+
+/*
+var miArreglo = [4, 6, 8, 2];
+var total = 0;
+
+for (var i = 0; i < miArreglo.length; i++){
+     console.log("iteraciones "+ i);
+     console.log(miArreglo[i]);
+  total += miArreglo[i];
+
+
+}
+console.log(total);
+*/
+
+// Ejemplo #1.
+
+/*
+var miSuma = [ 3, 6, 9, 12];
+var total = 0;
+
+for (var num = 0; num < miSuma.length; num++){
+    console.log("numero de lista " + num); 
+    console.log(miSuma[num]);
+    total += miSuma[num];
+}
+console.log(total);
+*/
+
+// Video 100. Ciclos (for) anidados.
+
+// Son muy utiles para procesar estructuras de datos multidimensionales.
+
+/*
+var miArreglo = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+ 
+for (var i = 0; i < miArreglo.length; i++){
+     console.log("< Nueva iteracion")
+     console.log("Arreglo");
+    var arregloAnidado = miArreglo[i]; // Arreglo
+     for (var j = 0; j < arregloAnidado.length; j++)
+         console.log(">> Ciclo anidado");
+         console.log("Elemento")
+         console.log(arregloAnidado[j]);
+}
+
+miArreglo[i];
+*/
+
+// Ejemplo #1.
+
+/*
+var miCancion = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+for(var cancion = 0; cancion < miCancion.length; cancion++){
+    console.log("< Nueva produccion")
+    console.log("Cancion")
+    var album = miCancion[cancion]; // Arreglo
+    for(var tema = 0; tema < album.length; tema++)
+      console.log( ">> Titulo de la cancion");
+      console.log("Tema")
+      console.log(album[tema]);
+
+}
+miCancion[cancion];
+*/
+
+// Video 101. Ciclos (do-while).
+
+// significa " hacer mientras". podemos hacer una cosa especifica mientras la condicion sea verdadera.
+
+/*
+var x;
+
+x = 13;
+
+ do {
+  console.log(x);
+  x++;
+} while (x < 10);
+
+
+while (x < 10) {
+  console.log(x);
+  x++;
+}
+*/
+
+// Ejemplo #1.
+
+/*
+var f = 21;
+
+do {
+  console.log(f);
+  f++;
+} while (f < 30);
+
+while (f < 30);
+console.log(f);
+f++;
+*/
+
+// Video 102. Busqueda de perfil.
+
+/*
+var contactos = [
+  {
+    "nombre": "nora",
+    "apellido": "Nav",
+    "numero": "05102039393",
+    "gustos": ["Pizza", "Proframacion"]
+  },
+
+  {
+    "nombre": "Harry",
+    "apellido": "Potter",
+    "numero": "029485030394",
+    "gustos": ["Hogwarts", "Magia"]
+  },
+
+  {
+    "nombre": "Sherlock",
+    "apellido": "Holmes",
+    "numero": "9487202045830",
+    "gustos": ["Casos interesantes", "Violin"]
+  }
+];
+
+function buscarPerfil(nombre, propiedad) {
+  for(var i = 0; i < contactos.length; i++);
+  if(contactos[i].nombre === nombre) { 
+    return contactos[i][propiedad] || "La propiedad no existe"
+  }
+  return "El contacto no esta en la lista"
+
+}
+console.log(buscarPerfil("Mat", "numero"));
+*/
+
+// Video 103. Numeros aleatorios.
+
+// Math es un objeto que nos permite usar funciones y metodos para ecuaciones matematicas
+
+/*
+function generarFraccionAleatoria() {
+  return Math.random(); // (0, 1)
+  
+}
+console.log(generarFraccionAleatoria());
+console.log(generarFraccionAleatoria());
+console.log(generarFraccionAleatoria());
+console.log(generarFraccionAleatoria());
+console.log(generarFraccionAleatoria());
+console.log(generarFraccionAleatoria());
+
+
+
+var numeroAleatorio = Math.random();
+console.log(numeroAleatorio);
+*/
+
+// Video 104. Numeros enteros aleatorios.
+
+ // Math.floor() Nos permitira retornar el mayor numero entero que es menor o igual al numero que tenemos dentro de su ().
+
+/*
+ var numeroAleatorioEntre1y19 = Math.floor(Math.random()* 20);
+
+ console.log(numeroAleatorioEntre1y19);
+*/
+
+/*
+ function generarEnteroAleatorio(limiteSuperior) {
+     return Math.floor (Math.random() * limiteSuperior);
+
+}
+console.log(generarEnteroAleatorio(5));
+console.log(generarEnteroAleatorio(5));
+console.log(generarEnteroAleatorio(5));
+console.log(generarEnteroAleatorio(5));
+console.log(generarEnteroAleatorio(5));
+*/
+
+// Ejemplo #1.
+
+/*
+function generarConteo(conteoMaximo) {
+  return Math.floor (Math.random() * conteoMaximo);
+
+}
+console.log(generarConteo(21));
+console.log(generarConteo(21));
+console.log(generarConteo(21));
+console.log(generarConteo(21));
+console.log(generarConteo(21));
+*/
+
+// Video 105. Numeros enteros aleatorios en un rango.
+
+/*
+function rangoAleatorio(limiteSuperior, limiteInferior) {
+  return Math.floor (Math.random() * (limiteSuperior - limiteInferior +1));
+
+}
+console.log(rangoAleatorio(21, 12));
+console.log(rangoAleatorio(21, 12));
+console.log(rangoAleatorio(21, 12));
+console.log(rangoAleatorio(21, 12));
+console.log(rangoAleatorio(21, 12));
+console.log(rangoAleatorio(21, 12));
+*/
+
+// Ejemplo #1.
+
+/*
+function numerosAleatorios(ranogSuperior, rangoInferior) {
+  return Math.floor (Math.random() * (ranogSuperior - rangoInferior +1));
+
+}
+console.log(numerosAleatorios(72, 26));
+console.log(numerosAleatorios(72, 26));
+console.log(numerosAleatorios(72, 26));
+console.log(numerosAleatorios(72, 26));
+console.log(numerosAleatorios(72, 26));
+console.log(numerosAleatorios(72, 26));
+*/
+
+// Video 106.
