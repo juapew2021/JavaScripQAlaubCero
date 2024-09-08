@@ -1890,13 +1890,192 @@ console.log(numerosAleatorios(72, 26));
 */
 
 
+// Video 106. Funcion parseInt().
+
+// Parse significa "convertir" esto lo que hace es convertir una cadena de caracteres a un entero
+
+//console.log(parseInt("5"));
+//console.log(parseInt("-47"));
+
+// si queremos convertir un valor que no sea un numero nos saldra la respuesta NaN (Not a number).
+
+// Video 107. Funcion parseInt() con una base.
+
+// podemos convertir una cadena de caracteres numericos decimales a numeros enteros
+
+/*
+console.log(parseInt("110111", 2));
+console.log(parseInt(110111, 2));
+
+console.log(parseInt("3E0A", 16));
+*/
+
+// Video 108.  Operador condicional ternario.
+
+// No permite compactar lo que seria un condicional de una sola linea
+
+/*
+function retornarMinimo(x, y) {
+  if ( x < y){
+    return x;
+  } else {
+    return y;
+  }
+}
+*/
+/*
+function retornarMinimo(x, y) {
+  return x < y ? x : y;
+}
+console.log(retornarMinimo(4, 7));
+*/
+/*
+function retornarMaximo(m, f) {
+  return m > f ? m : f;
+}
+console.log(retornarMaximo(32, 27));
+*/
+
+// Video 109. Multiples operadores condicionales.
+
+// Haremos multiples operadores condicionales ternarios uno dentro de otro como si fuesen un objeto anidado.
+
+/*
+function compararNumeros(a, b) {
+  if (a = b){
+    return "a y b son iguales";
+  } else if (a > b){
+    return "a es mayor que b";
+  } else {
+    return "b es mayor que a"
+  }
+}
+*/
+/*
+function compararNumeros(a, b) {
+  return a === b ? "a y b son iguales" 
+  : a > b ? "a es mayor que b"
+  : "b es mayor que a"
+}
+console.log(compararNumeros(11, 27));
+console.log(compararNumeros(27, 11 ));
+console.log(compararNumeros(15, 15 ));
+*/
 
 
+// Ejemplo #1. 
+
+/*
+function compararEdades(m, f) {
+  return m == f ? "m y f tienen la misma edad"
+  : m > f ? "m es mayor que f"
+  : " f es mayor que m";
+}
+console.log(compararEdades(32, 27));
+console.log(compararEdades(27, 32));
+console.log(compararEdades(27, 27));
+*/
+
+// Video 110. var vs let.
+
+/* la variable "var" nos permite repetir una variable declarda en cambio
+la variable "let" no permite que se repita la variable una vez ya esta declarada. */ 
+
+/*
+var campista = "James";
+var campista = "David";
+
+console.log((campista));
+*/
+
+//let campista = "Mateo";
+//let campista = "Juan";
+
+/*
+let campista = "Mateo";
+ campista = "Juan";
+
+ console.log((campista));
+*/
+
+// Video 111. Ambito var vs let.
 
 
+/*Cuando usamos var creamos una variable global si esta en el programa principal y una local si esta definida dentro de la funcion */
+
+/*
+var miVariableGlobal = 4;
+console.log(miVariableGlobal);
+
+function miFuncion() {
+  console.log(miVariableGlobal);
+
+  var miVariableLocal = 8;
+  console.log(miVariableLocal);
+}
+//miFuncion();
+console.log(miVariableLocal);
+console.log(miVariableGlobal);
+*/
+
+/*
+for(var i = 0; i < 3; i++);{
+  console.log(i);
+}
+*/
+
+/*
+var mostrarColor = true;
+
+if(mostrarColor) {
+  var color = "verde"
+  
+  console.log("mi color favorito es " + color);
+}
+
+console.log(color);
+*/
+
+// Video 112. Const.
+
+/*Es una abreviacion de "Constante" son variables que pueden ser usadas aese valor.
+No se puede modificar su valor una vez ya se le haya asignado por primera vez */
+
+/*
+const miConstante = 35;
+console.log(miConstante);
+
+const miConstante = 15; // SyntaxError
+*/
+
+// La variable Const es mas restrictiva, se asigna un valor para una misma linea.
 
 
+// Video 113. Mutar arreglo declarado con const.
 
+/*
+const miArreglo = [1, 2, 3, 4];
+//miArreglo = [5, 6, 7, 8];
 
+miArreglo[0] = 5;
+miArreglo[1] = 6;
+miArreglo[2] = 7;
+miArreglo[3] = 8;
+console.log(miArreglo);
+*/
 
+// Ejemplo #1.
 
+/*
+const cambioDeArreglos = ["Mateo", 27, "Nicolas", 22];
+
+cambioDeArreglos[0] = "Nicolas";
+cambioDeArreglos[1] = 27;
+cambioDeArreglos[2] = "Mateo";
+cambioDeArreglos[3] = 22;
+console.log(cambioDeArreglos);
+*/
+
+// Video 114. Crear un objeto inmutable.
+
+ 
