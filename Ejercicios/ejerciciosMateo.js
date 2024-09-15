@@ -2078,4 +2078,299 @@ console.log(cambioDeArreglos);
 
 // Video 114. Crear un objeto inmutable.
 
+// De esta manera haremos que un objeto sea inmutable.
+
+/*
+let colores = {
+  "verde":  "#10eB4b",
+  "azul": "#1b50e0",
+  "negro": "#00000",
+  "blanco": "#ffffff"
+};
+
+Object.freeze(colores);
+
+colores.amarillo = "#fff200";
+console.log(colores);
+*/
+
+/* Com el metodo "frezze" podemos prevenir la modficacion de atributos de propiedades existentes y 
+previenen la incorporacion o edicion de nuevas propiedades al objeto*/
+
+// Ejemplo #1.
+
+/*
+let funcionDeProgramas = {
+  "HTML": "estructura",
+  "CSS": "diseño",
+  "JavaScrpit": "accion",
+  "Xpath": "llave"
+};
+
+//Object.freeze(funcionDeProgramas);
+//console.log(funcionDeProgramas);
+
+funcionDeProgramas.cypress = "autommatizacion";
+console.log(funcionDeProgramas);
+*/
+
+// Video 115. Funciones flecha.
+
+// Son normalamente usadad para crear funciones anonimas, que no llevan un nombre especifico.
+
+/*
+const fecha = function() {
+  return new Date()
+};
+
+
+const fecha = () => new Date ();
+*/
+
+// Video 116. Funciones flecha con parametros.
+
+/*
+const sumarTres = function (x) {
+  return x + 3;
+}
+
+
+const sumarTres = (x) => x + 3;
+console.log(sumarTres(4));
+
+
+const concatenar = function (arr1, arr2) {
+  return arr1.concat(arr2);
+}
+
+console.log(concatenar[1, 2], [3, 4, 5]);
+
+
+const concatenar = (arr1, arr2) => arr1.concat(arr2);  {
+  console.log(concatenar[1, 2], [3, 4, 5]);
+}
+*/
+
+// Ejemplo #1. 
+
+/*
+const frituras = function (pescado, pollo) {
+  return pescado.concat(pollo);
+}
+console.log(frituras["calamares", "chopitos"], ["crujientes", "nuggets"]);
+
+const frituras = (pescado, pollo) => pescado.concat(pollo); {
+  console.log(frituras["calamares", "chopitos"], ["crujientes", "nuggets"]);
+}
+*/
+
+/* El metodo .concat() nos permite unir un arreglo con otro, llamando el arreglo al cual se le añadiran los objetos
+y se concatena con el segundo elemento que se desee añadir.
+*/
+
+// Video 117. Valores por defecto para parametros.
+
+// Es util para permitirle al usuario que omita algun argumento para utilizar el valor por defecto.
+
+/*
+const incrementar =  (num, valor = 1) => num + valor;
+console.log(incrementar(5, 3));
+
+
+// Ejemplo #1.
+
+const identidad = (genero, edad = + 1) => genero + edad;
+console.log(identidad(22)); 
+*/
+
+// Video 118. Operador rest.
  
+// Permite pasar cualquier numero de argumentos a una funcion y que se reagrupen como un arreglo.
+
+/*
+function miFuncion (...arg) {
+  console.log(arg);
+
+}
+miFuncion(1, 2);
+miFuncion([1, 2, 3], [4, 5, 6]);
+*/
+
+// Ejemplo #1.
+
+/*
+function añoDeNacimiento (...fechas) {
+  console.log(fechas);
+}
+añoDeNacimiento(2001);
+añoDeNacimiento([1996, 2001], [1965, 1977]);
+*/
+
+// Video 119. Operador spread.
+
+/* Toma un arreglo y los descompone en elementos individuales
+para que la funcion pueda recibirlos y asignarlos a su parametro correspondiente*/
+
+/*
+const numeros = [1, 2, 3];
+
+function sumar (x, y, z) {
+  return x + y + z;
+}
+//console.log(sumar(numeros[0], numeros[1], numeros[2]));
+console.log(sumar(...numeros));
+*/
+
+// Ejemplo #1
+
+/*
+const programacion = ["quiero aprender", "a promgramar y", "automarizar con JavScript"];
+
+function unir (x, y, z) {
+return x + y + z;
+}
+console.log(...programacion);
+*/
+
+// Video 120. Sintaxis de desestructuracion.
+
+// Nos permite asignar las propiedades de un objeto a variables que se pueden usar dentro del programa.
+
+/*
+const usuario = {
+  nombre: "Samuel Smith",
+  edad: 34
+};
+
+const nombre = usuario.nombre;
+const edad = usuario.edad;
+
+console.log(edad);
+console.log(nombre);
+
+//const {nombre, edad} = usuario;
+*/
+
+// Video 121. Sintaxis de desestructuracion: Objetos anidados.
+
+/*
+const usuario = {
+  JohnDoe: {
+    edad: 27,
+    correo: "JohnDoe@JavaScript.com"
+  }
+}
+
+const {edad: edadDelUsuario, correo: correoDelUusario} = usuario;
+console.log(edadDelUsuario);
+console.log(correoDelUusario);
+*/
+
+// Video 122. Sintaxis de desestructuracion: Arreglos.
+
+/*
+var a;
+var b;
+var c;
+
+[a, b,,, c] = [1, 2, 3, 4, 5, 6, 7];
+
+console.log(a);
+console.log(b);
+console.log(c);
+*/
+
+// Ejemplo #1.
+
+/*
+var a;
+var b;
+var c;
+
+[a, b,, c] = ["1er puesto", "2do puesto", "3cer puesto", "4to puesto", "5to puesto"];
+
+console.log(a, b, c);
+*/
+
+// Video 123. Sintaxis de desestructuracion: Operador rest
+
+// Lo usaremos para reasignar un arreglo a varias variables
+
+/*
+var a;
+var b;
+
+[a, b, ... arr] = [1, 2, 3, 4, 5, 6, 7];
+console.log(a);
+console.log(b);
+console.log(arr);
+*/
+
+// Ejemplo #1.
+
+/*
+var x;
+var y;
+
+[x, y, ... z] = ["promgramacion", "automatizacion", "JavaScript", "cypress", "HTML", "Baase de datos" ];
+console.log(x);
+console.log(y);
+console.log(z);
+*/
+
+// Video 124. Sintaxis de desestructuracion: Pasar objeto como argumento.
+/*
+
+var nuevoPerfilCliente = {
+  nombre: "Samuel",
+  edad: 24,
+  nacionalidad: "Española",
+  ubicacion: "España"
+};
+
+const actualizarPerfil = (informacionDelPerfil) => {
+  const {nombre, edad, nacionalidad, ubicacion} =informacionDelPerfil;
+  console.log(nombre);
+  console.log(edad);
+  console.log(nacionalidad);
+  console.log(ubicacion);
+}
+
+
+const actualizarPerfil = (informacionDelPerfil) => {
+  console.log(informacionDelPerfil);
+}
+
+
+const actualizarPerfil = ({nombre, edad, nacionalidad, ubicacion}) => {
+  console.log(nombre);
+  console.log(edad);
+  console.log(nacionalidad);
+  console.log(ubicacion);
+}
+
+actualizarPerfil(nuevoPerfilCliente);
+*/
+
+// Ejemplo #1.
+
+/*
+var herramientasDeProgramacion = {
+  HTML: "estructura",
+  CSS: "diseño",
+  JavaScrpit: "accion",
+  Xpath: "llave",
+  cypress: "automatizacion"
+}
+
+const funcionalidad = ({HTML, CSS, JavaScrpit, Xpath, cypress}) => {
+   console.log(HTML);
+   console.log(CSS);
+   console.log(JavaScrpit);
+   console.log(Xpath);
+   console.log(cypress);
+}
+funcionalidad(herramientasDeProgramacion);
+*/
+
+// Video 125.
